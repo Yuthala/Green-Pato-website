@@ -1,0 +1,92 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.hero-container {
+    /* background: url('../images/garlic-bckg.jpg') center center / cover no-repeat; */
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    margin-top: -100px;
+}
+
+.hero-container > h1 {
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 48px;
+    font-family: 'Bitter', sans-serif;
+}
+
+.hero-container > p {
+    text-transform: uppercase;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Bitter', sans-serif; 
+}
+
+.hero-btns {
+    margin-top: 32px;
+}
+
+.hero-btns .btn{
+    margin: 6px;
+}
+
+.fa-play-circle {
+    margin-left: 4px;
+}
+
+/*
+    .hero-container > h1 {
+        font-size: 36px;
+        margin-top: -150px;
+    }
+} */
+
+@media screen and (max-width: 960px) {
+    .hero-container > h1 {
+        font-size: 32px;
+    }
+    .hero-container > p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container > h1 {
+        font-size: 32px;
+    }
+    .hero-container > p {
+        font-size: 22px;
+    }
+    .btn-mobile {
+        display: block;
+        text-decoration: none;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .hero-container > h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .hero-container > p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
