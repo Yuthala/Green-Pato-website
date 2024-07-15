@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function GarlicType ({id, src, alt, label, priceA, priceB, priceC, sizeA, sizeB, sizeC, measurement}) {
+export function GarlicType ({id, src, alt, label, priceA, priceB, sizeA, sizeB, measurement}) {
 	return (
 		<>
 		 <div className="garlic__type-item">
@@ -15,8 +15,6 @@ export function GarlicType ({id, src, alt, label, priceA, priceB, priceC, sizeA,
 				<p className="garlic-size">{sizeA}</p>
 				<p className="garlic-cat">Категория Б:  {priceB}</p>
 				<p  className="garlic-size">{sizeB}</p>
-				<p className="garlic-cat">Категория В:  {priceC}</p>
-				<p  className="garlic-size">{sizeC}</p>
 			</div>
 		  </div>
 		</>

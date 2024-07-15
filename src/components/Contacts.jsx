@@ -16,7 +16,7 @@ function Contacts() {
 					<p> узнать актуальные цены | оформить заказ</p>
 					<p>получить счет на оплату | задать вопрос</p>
 					<h4>всё это теперь доступно через Телеграм-бот</h4>
-					<Link to='' target="_blank">
+					<Link to='https://t.me/@LukiChesnoki_bot' target="_blank">
 						<img src={tg} alt='TG-bot' className="tg-bot__img"/>
 					</Link>
 				</div>

@@ -31,7 +31,7 @@ export default function Order() {
                     <div className="order__wrapper">
                         <div className="order__item">
                             <label>через Telegram bot</label>
-                            <Link to='' target="_blank">
+                            <Link to='https://t.me/@LukiChesnoki_bot' target="_blank">
                                 <img src={tg} alt='TG-bot' className="tg-bot__img"/>
                             </Link>
                         </div>
