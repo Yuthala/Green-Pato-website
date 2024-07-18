@@ -15,7 +15,7 @@ function Footer() {
             <div className="footer-link-wrapper">
                 <div className="footer-link-items">
                         <h2>Контакты</h2>
-                        <Link to='' target="_blank">
+                        <Link to='https://t.me/LukiChesnoki_bot' target="_blank">
                             Telegram
                         </Link>
                         <Link to='https://vk.com/fermatikh' target="_blank">
@@ -35,7 +35,7 @@ function Footer() {
 
                 <div className="footer-link-items">
                     <h2>Заказ</h2>
-                    <Link to='https://t.me/@LukiChesnoki_bot' target="_blank">
+                    <Link to='https://t.me/LukiChesnoki_bot' target="_blank">
 						<img src={tg} alt='TG-bot' className="tg-bot__img"/>
 					</Link>
                     <Link to='https://vk.com/fermatikh' target="_blank">
