@@ -7,9 +7,8 @@ import { Link } from 'react-router-dom';
 function Adv() {
 	return (
 		<div className="adv-container">
-			<p className="banner"><span className="bigger-text">только до 31 августа </span><br/>
-			протравливание профессиональным препаратом <br/>
-			в подарок к любому заказу</p>
+			<p className="banner"><span className="bigger-text">Предзаказ на 2025 год</span><br/>
+			Открыто бронирование на посевной материал лука и чеснока по очень выгодным ценам.</p>
 
 			<Link to="/order">
 				<Button 

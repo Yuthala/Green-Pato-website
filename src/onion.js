@@ -21,22 +21,22 @@ export const assort = [
 		id: 1,
 		src: sevokShalot,
 		alt: 'sevok-shalot',
-		label: 'лук-шалот севок'
+		label: 'шалот севок'
 	}, {
 		id: 2,
 		src: onionSeeds,
 		alt: 'onion-seeds',
-		label: 'лук-шалот семена'
+		label: 'шалот семена'
 	}, {
 		id: 3,
 		src: onionRedBaron,
 		alt: 'sevok-redbaron',
-		label: 'лук репчатый севок'
+		label: 'лук севок'
 	}, {
 		id: 4,
 		src: onionSeeds2,
 		alt: 'onion-seeds',
-		label: 'лук репчатый семена'
+		label: 'лук семена'
 	}
 ];
 

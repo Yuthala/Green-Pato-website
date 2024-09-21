@@ -20,13 +20,13 @@ const cards = [
     }, {
         id: 3,
         src: shalot,
-        text: 'лук-шалот',
-        label: 'лук',
+        text: 'лук шалот',
+        label: 'шалот',
         path: '/onion#onion'
     }, {
         id: 4,
         src: redbaron,
-        text: 'лук репчатый',
+        text: 'лук-севок',
         label: 'лук',
         path: '/onion#onion'
     }, {
