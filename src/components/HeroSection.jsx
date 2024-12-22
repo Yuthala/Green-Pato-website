@@ -4,16 +4,16 @@ import { Button } from './Button';
 import './HeroSection.css';
 // import{ Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
-import videoCover from '../videos/Green_pato_cover.mp4';
+// import videoCover from '../videos/Green_pato_cover.mp4';
 
 
 function HeroSection() {
 
   return (
     <div className="hero-container">
-        <video src={videoCover} autoPlay loop muted/>
+        {/* <video src={videoCover} autoPlay loop muted/> */}
         <h1>Питомник луковичных культур</h1>
-        <p>Посевной материал собственного производства</p>
+        <h4>Посевной материал собственного производства</h4>
         
         <div className="hero-btns">
           <Link to="/#cards" className="btn-mobile">
@@ -32,7 +32,7 @@ function HeroSection() {
                 buttonStyle="btn--primary"
                 buttonSize="btn--large"
             >
-            ВИДЕО О ПИТОМНИКЕ <i className="far fa-play-circle" />
+            ВИДЕО О ПИТОМНИКЕ <i className="fa fa-play-circle" />
             </Button> */}
         </div>
     </div>

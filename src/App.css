@@ -5,21 +5,39 @@
   --tint: #AB3541;
   --background: #B4C277;
   --text-background: #F9FBE9;
+  --green-accent: green;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Bitter", sans-serif;
+  font-family: "Comfortaa", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   line-height: 1.5em;
+  color: var(--accent);
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h2 {
   text-align: center;
-	color: var(--tint);
-	font-weight: bold;
+	font-weight: 600;
 	text-transform: uppercase;
+}
+
+h4 {
+  text-align: center;
+	font-weight: 500;
+  font-size: 28px;
+	text-transform: uppercase;
+  margin: 2vh auto;
 }
 
 .divider {

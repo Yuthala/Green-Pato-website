@@ -37,14 +37,14 @@ function Navbar() {
     window.addEventListener('resize', showButton);
 
   return (
-    <div>
+    <div className="wrapper-nav">
         <nav className="navbar">
             <div className="navbar-container">
                 {/* при клике по логотипу mobile Menu также закрывается */}
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                     <div className="navbar-wrapper">
                         <img src={logo} width={90} alt="logo"/>
-                        <h2>green<br/>pato</h2>
+                        <h2>green pato</h2>
                     </div>
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
