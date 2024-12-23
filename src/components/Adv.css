@@ -1,18 +1,14 @@
 :root {
-    --primary: #fff;
-    --accent: #504842;
-    --tint: #AB3541;
-    --background: #B4C277;
     --text-background: #F9FBE9;
-	--banner: #0fa;
-	--banner-close: #064b17;
+	--banner: rgb(248, 183, 5);
+	--banner-close: #fab730;
 	--banner-glow: #f09;
 }
 
-@keyframes pulsate {
-	100% {
+/* @keyframes pulsate {
+	100% { */
 	  /* Larger blur radius */
-	  text-shadow:
+	  /* text-shadow:
 		0 0 4px #fff,
 		0 0 12px #fff,
 		0 0 21px #fff,
@@ -21,10 +17,10 @@
 		0 0 96px var(--banner-glow),
 		0 0 110px var(--banner-glow),
 		0 0 160px var(--banner-glow);
-	}
-   0% {
+	} */
+   /* 0% {
 	  /* A slightly smaller blur radius */
-	  text-shadow:
+	  /* text-shadow:
 		0 0 3px #fff,
 		0 0 9px #fff,
 		0 0 17px #fff,
@@ -34,24 +30,28 @@
 		0 0 90px var(--banner-glow),
 		0 0 130px var(--banner-glow);
 	}
-  }
+  }  */
 
-.adv-container {
+.adv-wrapper {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	gap: 6vw;
+	gap: 2vh;
 	align-items: center;
 	font-size: 1.3em;
 	background-color:#010a01;
 	padding: 4vh 0;
 }
 
-/* .banner {
-	width: 30%;
-	margin: 2vw 7vh;
+.adv-wrapper p {
+	color: var(--primary);
+}
+
+.banner {
+	margin: 2vh 2vw 5vh 2vw;
 	border: 0.2rem solid #fff;
 	border-radius: 2rem;
-	padding: 0.4em;
+	padding: 1em;
 	box-shadow: 0 0 .2rem var(--banner),
 				0 0 .2rem var(--banner),
 				0 0 2rem var(--banner),
@@ -59,25 +59,24 @@
 				0 0 2.8rem var(--banner),
 				inset 0 0 1.3rem var(--banner);
 	text-align: center;
-	color: #fff;
 	text-shadow: 
 		0 0 7px var(--banner-close),
 		0 0 10px var(--banner-close),
 		0 0 21px var(--banner-close),
 		0 0 42px var(--banner),
-		0 0 82px var(--banner),
-		0 0 92px var(--banner),
-		0 0 102px var(--banner),
-		0 0 151px var(--banner);
-  }
+		0 0 82px var(--banner);
+  } 
 
 .bigger-text {
-	font-size: 1.3em;
-	animation: pulsate 0.8s ease-in-out infinite alternate; 
+	font-size: 1.2em;
+	font-weight: 600;
+	color: var(--primary);
+	text-transform: uppercase;
+	/* animation: pulsate 0.8s ease-in-out infinite alternate;  */
 }
-
+/* 
 @media screen and (prefers-reduced-motion) { 
 	h1 {
 	  animation: none;
 	}
-  } */
+  }  */

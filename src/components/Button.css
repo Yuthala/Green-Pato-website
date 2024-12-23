@@ -44,8 +44,9 @@
 }
 
 .btn--large:hover {
-    background-color: transparent;
-    color: var(--primary);
+    background-color: var(--primary);
+    border-color: var(--tint);
+    color: var(--tint);
     transition: all 0.3s ease-out;
 }
 

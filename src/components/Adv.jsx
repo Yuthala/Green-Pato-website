@@ -11,10 +11,9 @@ function Adv() {
 	// const counterClick = () => {window.ym(97604546,'reachGoal','OrderClick')};
 
 	return (
-		<div className="adv-container">
-			<p className="banner"><span className="bigger-text">Предзаказ на 2025 год</span><br/>
-			Открыто бронирование на посевной материал лука и чеснока по выгодным ценам.</p>
-
+		<div className="adv-wrapper">
+			<p>Бронируйте посевной материал лука и чеснока по выгодным ценам</p>
+			<p className="banner"><span className="bigger-text">Открыт предзаказ на 2025 год</span></p>
 			<Link to="/order">
 				<Button 
 					className="btns"   
@@ -25,7 +24,6 @@ function Adv() {
 				ЗАКАЗАТЬ
 				</Button>
 			</Link>
-
 		</div>
 	)
 }
