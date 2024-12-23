@@ -45,6 +45,8 @@
 
 .adv-wrapper p {
 	color: var(--primary);
+	padding: 2vh 2vw;
+	text-align: center;
 }
 
 .banner {

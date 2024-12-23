@@ -1,7 +1,7 @@
 .delivery {
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 2vw 5vh;
+	padding: 0 2vw 2vh;
 	background: var(--primary);
 }
 
@@ -12,15 +12,15 @@
 
 .delivery h2 {
 	color: var(--tint);
-	margin-bottom: 10vh;
+	margin-bottom: 3vh;
 }
 
 .delivery__container {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: start;
 	gap: 3vw;
-	padding: 10vh 0;
+	padding: 8vh 0;
 }
 
 .delivery__item {
@@ -33,4 +33,10 @@
 .delivery__item__img {
 	width: 15vw;
 	object-fit: contain;
+}
+
+@media screen and (max-width: 630px) {
+	.delivery__container {
+		padding: 4vh 0;
+	}
 }

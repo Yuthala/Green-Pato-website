@@ -56,13 +56,16 @@
 }
 
 @media screen and (max-width: 630px) {
-    .hero-container > h1 {
+    .hero-container h1 {
         font-size: 28px;
         text-align: center;
         margin-top: 10vh;
     }
-    .hero-container > p {
+    .hero-container  h4 {
         font-size: 18px;
         text-align: center;
+    }
+    .hero-btns {
+        margin-top: 10px;
     }
 }

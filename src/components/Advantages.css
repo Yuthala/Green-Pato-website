@@ -33,21 +33,23 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .icon__item__img {
-	height: 90px;
+	height: 70px;
 	margin-bottom: 2vh;
 }
 
 .icon__item__label {
 	color: var(--tint);
+	font-weight: 700;
 	font-size: 1em;
 }
 
 @media screen and (max-width: 630px) {
 	.icon__container {
-		flex-direction: column;
+		/* flex-direction: column; */
 	}
 	.icon__item__img {
 		height: 60px;
