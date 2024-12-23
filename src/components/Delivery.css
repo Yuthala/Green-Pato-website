@@ -12,6 +12,7 @@
 
 .delivery h2 {
 	color: var(--tint);
+	margin-bottom: 10vh;
 }
 
 .delivery__container {
@@ -32,9 +33,4 @@
 .delivery__item__img {
 	width: 15vw;
 	object-fit: contain;
-}
-
-.delivery >h2 {
-	font-size: 2.4em;
-	margin-bottom: 10vh;
 }

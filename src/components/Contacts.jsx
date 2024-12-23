@@ -10,12 +10,13 @@ import tg from '../images/icons/tg.svg';
 function Contacts() {
 	return (
 		<div className="contacts-container" id="contacts">
-			<h2 className="contacts__header">Контакты</h2>
+			<h2>Контакты</h2>
 			<div className='contacts__wrapper'>
 				<div className="contacts-link">
+					<h4>Телеграм-бот</h4>
 					<p> узнать актуальные цены | оформить заказ</p>
 					<p>получить счет на оплату | задать вопрос</p>
-					<h4>всё это теперь доступно через Телеграм-бот</h4>
+
 					<Link to='https://t.me/LukiChesnoki_bot' target="_blank">
 						<img src={tg} alt='TG-bot' className="tg-bot__img"/>
 					</Link>
@@ -24,7 +25,7 @@ function Contacts() {
 				<div className="divider"></div>
 
 				<div className="contacts-mailto">
-					<p>или напишите нам по электронной почте</p>
+					<h4>Электронная почта</h4>
 						<Mailto to='sales@greenpato.ru' className="mailto__wrapper">
 								<label>sales@greenpato.ru</label>
 								<img className="contacts__img" src={email} alt='email'/>

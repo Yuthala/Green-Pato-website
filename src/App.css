@@ -6,6 +6,7 @@
   --background: #B4C277;
   --text-background: #F9FBE9;
   --green-accent: green;
+  --light-brown: #AD8945; 
 }
 
 * {
@@ -24,12 +25,14 @@ h1 {
   font-size: 52px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h2 {
   text-align: center;
 	font-weight: 600;
 	text-transform: uppercase;
+  font-size: 2.4em;
 }
 
 h4 {
