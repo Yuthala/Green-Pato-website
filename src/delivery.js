@@ -2,6 +2,7 @@ import post from './images/icons/post.jpg';
 import cdek from './images/icons/cdek.jpg';
 import boxberry from './images/icons/boxberry.jpg';
 import dellin from './images/icons/dellin.jpg';
+import tkkit from './images/icons/kit.jpg';
 
 const delivery = [
 	{
@@ -23,6 +24,12 @@ const delivery = [
 		id: 4,
         src: dellin,
 		alt: 'delovye-linii', 
+		label: '*только для грузов свыше 20 кг'
+	},
+	{
+		id: 5,
+        src: tkkit,
+		alt: 'kit', 
 		label: '*только для грузов свыше 20 кг'
 	}
 ]
