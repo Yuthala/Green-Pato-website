@@ -7,7 +7,7 @@ import QRcode from '../images/qrcode.png';
 function Social() {
 	return (
 		<div className="social-container">
-			<h4>Подпишись на наше сообщество ВКонтакте</h4>
+			<h4>Подпишись на наше сообщество VK</h4>
 			<div className="social__wrapper">
 				<ul className="social__list">
 					<li>оформить предзаказ или заказать товары в наличии</li>
