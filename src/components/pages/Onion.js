@@ -55,7 +55,7 @@ export default function Onion() {
     return (
         <div className="onion" id="onion">
             <div className="onion-header">
-                <h1>Лук и лук-шалот</h1>
+                <h1>Лук и Шалот</h1>
             </div>
 
             <section className="content">

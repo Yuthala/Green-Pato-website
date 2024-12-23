@@ -61,6 +61,8 @@ h4 {
 
 .content h3{
   margin-top: 15px;
+  color: var(--tint);
+  font-weight: 700;
 }
 
 .scheme {
@@ -89,14 +91,6 @@ h4 {
   font-size: 1em;
 }
 
-/* .order {
-  background-image: url('./images/img-8.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: var(--primary);
-  font-size: 100px;
-} */
 
 /* GARLIC */
 .garlic-header, .onion-header, .order-header{
@@ -144,6 +138,7 @@ h4 {
 .garlic__type-item h5, .onion__type-item h5 {
   color: var(--accent);
   font-size: 1em;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -155,17 +150,16 @@ h4 {
 }
 
 .garlic-price {
-  margin-top: 7vh;
+  margin-top: 1vh;
 }
 
 .garlic-price >h4 {
   color: var(--tint);
-  margin-bottom: 2vh;
   font-size: 1.1em;
 }
 
 .garlic-price >p {
-  line-height: 1.4em;
+  line-height: 1.2em;
   font-size: 1em;
 }
 
@@ -175,10 +169,10 @@ h4 {
 }
 
 .garlic-cat {
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
-.garlic-bold, .onion-bold {
+.onion-bold {
   font-size: 1.2em;
   color: var(--accent);
   line-height: 2em;
@@ -242,11 +236,10 @@ h4 {
 
 .garlic__sort-info >h5, .onion__sort-info >h5{
   color: var(--tint);
-  font-size: 1.6em;
+  font-weight: 700;
+  font-size: 1.5em;
   text-transform: uppercase;
-  margin: 3vh 0;
-  font-family: Lobster;
-  font-style: italic;
+  margin: 2vh 0;
 }
 
 .garlic__sort-info >p {
