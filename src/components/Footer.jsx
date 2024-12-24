@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 import Mailto from 'react-mailto.js';
 import QRcode from '../images/qrcode.png';
 import tg from '../images/icons/tg.svg';
-import logo from './../images/logo.png';
+// import logo from './../images/logo.png';
 
 
 function Footer() {
