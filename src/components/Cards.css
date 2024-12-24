@@ -3,7 +3,6 @@
 .cards {
     padding: .5rem;
     background: var(--primary);
-    /* max-width: 1120px; */
 }
 
 .cards__header {
@@ -108,9 +107,6 @@
 }
 
 @media only screen and (max-width: 1120px) {
-    /* .cards {
-        max-width: 960px;
-    } */
     .content__blog__container {
         width: 84%;
     }

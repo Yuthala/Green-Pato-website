@@ -1,9 +1,7 @@
 .delivery {
 	width: 100%;
-	/* margin: 0 auto; */
 	padding: 2vh 2vw;
 	background: var(--primary);
-	max-width: 1120px;
 }
 
 .delivery >p {

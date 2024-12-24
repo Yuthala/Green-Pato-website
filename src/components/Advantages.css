@@ -5,7 +5,6 @@
 .icons {
 	background-color: var(--background);
 	padding: 8vh 0;
-	/* max-width: 1120px; */
 }
 
 .icons >h2 {
@@ -43,16 +42,8 @@
 	font-size: 1em;
 }
 
-/* @media screen and (max-width: 1120px) {
-	.icons {
-        max-width: 960px;
-    }
-} */
 
 @media screen and (max-width: 630px) {
-	.icon__container {
-		/* flex-direction: column; */
-	}
 	.icon__item__img {
 		height: 60px;
 	}

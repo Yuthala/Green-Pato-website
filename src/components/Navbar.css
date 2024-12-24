@@ -1,6 +1,5 @@
 .wrapper-nav {
     display: block;
-    /* max-width: 1120px; */
 }
 .navbar {
     /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
@@ -110,9 +109,6 @@
 }
 
 @media screen and (max-width: 1120px) {
-    /* .wrapper-nav, .navbar, .navbar-container {
-        max-width: 960px;
-    } */
     .navbar-wrapper >h2 {
         font-size: 1.1em;
     }
