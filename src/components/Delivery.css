@@ -1,8 +1,9 @@
 .delivery {
 	width: 100%;
-	margin: 0 auto;
-	padding: 0 2vw 2vh;
+	/* margin: 0 auto; */
+	padding: 2vh 2vw;
 	background: var(--primary);
+	max-width: 1120px;
 }
 
 .delivery >p {
@@ -17,9 +18,9 @@
 
 .delivery__container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: start;
-	gap: 3vw;
+	gap: 1vw;
 	padding: 8vh 0;
 }
 
@@ -27,14 +28,19 @@
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	font-size: .8em;
+	font-size: .6em;
 }
 
 .delivery__item__img {
-	width: 15vw;
+	max-width: 10vw;
 	object-fit: contain;
 }
 
+@media screen and (max-width: 1120px) {
+	.delivery {
+        max-width: 960px;
+    }
+}
 @media screen and (max-width: 630px) {
 	.delivery__container {
 		padding: 4vh 0;

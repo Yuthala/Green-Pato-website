@@ -1,15 +1,11 @@
 :root {
-    --primary: #fff;
-    --accent: #504842;
-    --tint: #AB3541;
-    --background: #B4C277;
-    --text-background: #F9FBE9;
 	--backg: #c4e3f1;
 }
 
 .icons {
 	background-color: var(--background);
 	padding: 8vh 0;
+	/* max-width: 1120px; */
 }
 
 .icons >h2 {
@@ -23,7 +19,7 @@
 .icon__container {
 	display: flex;
 	justify-content: space-evenly;
-	gap: 5vw;
+	gap: 3vw;
 	margin-top: 7vh;
 	padding: 0 2vw;
 }
@@ -47,11 +43,28 @@
 	font-size: 1em;
 }
 
+/* @media screen and (max-width: 1120px) {
+	.icons {
+        max-width: 960px;
+    }
+} */
+
 @media screen and (max-width: 630px) {
 	.icon__container {
 		/* flex-direction: column; */
 	}
 	.icon__item__img {
 		height: 60px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+    .icon__container {
+        flex-direction: column;
+		gap: 4vh;
+    }
+	.icon__item__img {
+		height: 80px;
+		margin: 0;
 	}
 }

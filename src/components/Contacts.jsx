@@ -22,8 +22,6 @@ function Contacts() {
 					</Link>
 				</div>
 
-				<div className="divider"></div>
-
 				<div className="contacts-mailto">
 					<h4>Электронная почта</h4>
 						<Mailto to='sales@greenpato.ru' className="mailto__wrapper">

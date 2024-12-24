@@ -9,6 +9,12 @@
   --light-brown: #AD8945; 
 }
 
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  border: 1px solid lightgray
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -40,7 +46,7 @@ h4 {
 	font-weight: 500;
   font-size: 24px;
 	text-transform: uppercase;
-  margin: 2vh auto;
+  margin: 2vh 1vw;
 }
 
 .divider {
@@ -327,18 +333,12 @@ h4 {
   line-height: 2em;
 }
 
-.arrow-down {
-  display: block;
-  margin: 0 auto;
-  margin-top: 10vh;
-  transform: scale(1.6);
-}
-
 .order__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10vh;
+  margin-top: 6vh;
+  max-width: 100%;
 }
 
 .order__item {
@@ -385,13 +385,12 @@ h4 {
     justify-content: center;
     align-items: center;
   }
-
-  .arrow-down {
-    transform: scale(1.4);
-  }
 }
 
 @media screen and (max-width: 620px) {
+  .content {
+    padding: 3vh 2vw;
+  }
   .garlic__sort-item {
     padding: 10px;
   }
@@ -406,6 +405,10 @@ h4 {
   }
   .order-header>h1 {
     font-size: 3em;
+  }
+  .order__item {
+    width: 80%;
+    justify-content: space-between;
   }
 }
 

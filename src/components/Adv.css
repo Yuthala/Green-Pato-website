@@ -41,6 +41,7 @@
 	font-size: 1.3em;
 	background-color:#010a01;
 	padding: 4vh 0;
+	/* max-width: 1120px; */
 }
 
 .adv-wrapper p {
@@ -50,7 +51,7 @@
 }
 
 .banner {
-	margin: 2vh 2vw 5vh 2vw;
+	margin: 4vh 2vw 5vh 2vw;
 	border: 0.2rem solid #fff;
 	border-radius: 2rem;
 	padding: 1em;
@@ -82,3 +83,9 @@
 	  animation: none;
 	}
   }  */
+
+  /* @media screen and (max-width: 1120px) {
+	.adv-wrapper {
+        max-width: 960px;
+    }
+} */

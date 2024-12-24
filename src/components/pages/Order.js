@@ -5,7 +5,6 @@ import Mailto from 'react-mailto.js';
 import email from '../../images/icons/email.svg';
 import tg from '../../images/icons/tg.svg';
 import QRcode from '../../images/qrcode.png';
-import arrow from '../../images/arrow.gif';
 
 
 export default function Order() {
@@ -26,8 +25,6 @@ export default function Order() {
                         <li>Задать вопрос</li>
                     </ul>
 
-                    <img src={arrow} alt="arrow_down" className="arrow-down"/>
-
                     <div className="order__wrapper">
                         <div className="order__item">
                             <label>через Telegram bot</label>
@@ -44,7 +41,7 @@ export default function Order() {
                         </div>
 
                         <div className="order__item">
-                            <label>напишите нам по<br/> электронной почте</label>
+                            <label>напишите нам по<br/> электронной почте<br/>sales@greenpato.ru</label>
                             <Mailto to='sales@greenpato.ru' className="mailto__wrapper">
                                     <img className="contacts__img" src={email} alt='email'/>
                             </Mailto>

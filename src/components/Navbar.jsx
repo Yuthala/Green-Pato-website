@@ -39,12 +39,12 @@ function Navbar() {
   return (
     <div className="wrapper-nav">
         <nav className="navbar">
-            <div className="navbar-container">
+            <div className="navbar-container" id="navbar">
                 {/* при клике по логотипу mobile Menu также закрывается */}
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                     <div className="navbar-wrapper">
                         <img src={logo} width={90} alt="logo"/>
-                        <h2>green pato</h2>
+                        <h2>green&nbsp;pato</h2>
                     </div>
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>

@@ -8,31 +8,31 @@ const icons = [
 	{
         id: 1,
         src: icon1,
-        label: 'собственное производство',
-		    alt: 'field'
+        label: 'свои поля',
+		alt: 'field'
     }, {
         id: 2,
         src: icon2,
         label: 'ассортимент',
-		    alt: 'assortment'
+		alt: 'assortment'
     }, 
 	{
         id: 3,
         src: icon3,
         label: 'без болезней',
-		    alt: 'healthy'
+		alt: 'healthy'
     }, 
 	{
         id: 4,
         src: icon4,
         label: 'доставка по РФ',
-		    alt: 'delivery'
+		alt: 'delivery'
     }, 
 	{
         id: 5,
         src: icon5,
         label: 'гарантия качества',
-		    alt: 'selected'
+		alt: 'selected'
     }, 
 ]
 

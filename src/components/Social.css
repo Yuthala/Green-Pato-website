@@ -4,6 +4,7 @@
 	color: var(--accent);
 	font-size: 1.2em;
 	padding: 5vh 2vw;
+	/* max-width: 1120px; */
 }
 
 .social-container h4 {
@@ -24,7 +25,11 @@
 .social__img{
 	height: 20vh;
 }
-
+/* @media screen and (max-width: 1120px) {
+	.social-container {
+        max-width: 960px;
+    }
+} */
 @media screen and (max-width: 630px) {
 	.social__img{
 		height: 12vh;

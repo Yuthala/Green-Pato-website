@@ -1,8 +1,9 @@
 
 
 .cards {
-    padding: 2rem;
+    padding: .5rem;
     background: var(--primary);
+    /* max-width: 1120px; */
 }
 
 .cards__header {
@@ -106,7 +107,10 @@
     line-height: 24px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1120px) {
+    /* .cards {
+        max-width: 960px;
+    } */
     .content__blog__container {
         width: 84%;
     }
