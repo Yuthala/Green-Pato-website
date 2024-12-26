@@ -77,7 +77,7 @@ function Footer() {
             </Link>
             <div className="react">
                 <p>Powered by</p>
-                <i class="fa-brands fa-react"></i>
+                <i className="fa-brands fa-react"></i>
             </div>
             
             <div className="copyright">
