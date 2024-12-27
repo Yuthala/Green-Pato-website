@@ -30,7 +30,7 @@ function Cards() {
 
 
   return (
-    <div className="cards" id="cards">
+    <section className="cards" id="cards">
         <h2 className="cards__header">Культуры</h2>
         <div className="cards__container">
             <div className="cards__wrapper">
@@ -43,7 +43,7 @@ function Cards() {
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
   );
 }
 

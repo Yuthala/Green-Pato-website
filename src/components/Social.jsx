@@ -6,7 +6,7 @@ import QRcode from '../images/qrcode.png';
 
 function Social() {
 	return (
-		<div className="social-container">
+		<section className="social-container">
 			<h4>Подпишись на наше сообщество VK</h4>
 			<div className="social__wrapper">
 				<ul className="social__list">
@@ -22,7 +22,7 @@ function Social() {
 				</Link>
 
 			</div>
-		</div>
+		</section>
 	)
 }
 

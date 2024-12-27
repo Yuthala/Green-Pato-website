@@ -10,7 +10,7 @@ import tg from '../images/icons/tg.svg';
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <section className="footer-container">
 
         <Link to="/" className="social-logo-up">
             green pato
@@ -85,7 +85,7 @@ function Footer() {
                 <small className="website-rights">Webmaster: Yuthala@GitHub</small>
             </div>
         </section>
-    </div>
+    </section>
   )
 }
 

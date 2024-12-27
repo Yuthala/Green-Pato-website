@@ -37,7 +37,7 @@ function Navbar() {
     window.addEventListener('resize', showButton);
 
   return (
-    <div className="wrapper-nav">
+    <section className="wrapper-nav">
         <nav className="navbar">
             <div className="navbar-container" id="navbar">
                 {/* при клике по логотипу mobile Menu также закрывается */}
@@ -84,7 +84,7 @@ function Navbar() {
 }
             </div>
         </nav>
-    </div>
+    </section>
   )
 }
 

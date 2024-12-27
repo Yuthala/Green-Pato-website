@@ -10,7 +10,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 function HeroSection() {
 
   return (
-    <div className="hero-container">
+    <section className="hero-container">
         {/* <video src={videoCover} autoPlay loop muted/> */}
         <h1>Питомник луковичных культур</h1>
         <h4>Посевной материал собственного производства</h4>
@@ -35,7 +35,7 @@ function HeroSection() {
             ВИДЕО О ПИТОМНИКЕ <i className="fa fa-play-circle" />
             </Button> */}
         </div>
-    </div>
+    </section>
   )
 }
 

@@ -18,12 +18,12 @@ function Icons() {
         );
 
   return (
-    <div className="icons">
+    <section className="icons">
         <h2>Наши преимущества</h2>
         <div className="icon__container">
             {Icon}
         </div>
-    </div>
+    </section>
   );
 }
 

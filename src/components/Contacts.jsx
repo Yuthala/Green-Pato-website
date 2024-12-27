@@ -11,7 +11,7 @@ import ContactForm from './ContactForm';
 function Contacts() {
 	return (
 		<>
-			<div className="contacts-container" id="contacts">
+			<section className="contacts-container" id="contacts">
 				<h2>Контакты</h2>
 				<div className='contacts__wrapper'>
 					<div className="contacts-link">
@@ -32,7 +32,7 @@ function Contacts() {
 							</Mailto>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			{/* Contact Form */}
 			<ContactForm />

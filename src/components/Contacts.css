@@ -50,8 +50,7 @@
 	text-decoration: none;
 }
 
-.contacts-link h4, .contacts-mailto h4 {
+.contacts-link h4, .contacts-mailto h4, .contact h4 {
 	color: var(--tint);
-	font-size: 1.5em;
 	margin-top: 2vh;
 }
