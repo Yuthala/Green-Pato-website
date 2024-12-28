@@ -13,9 +13,11 @@ function ContactForm() {
         message: '',
         termsAndConditions: false
 	})
-	// создаем метод update для всех инпутов, тернарный оператор для input type checkbox и "все остальные" типа
+
+	// создаем метод update для всех инпутов, тернарный оператор для input type checkbox и type "все остальные" 
 	const update = event => {
 		const target = event.currentTarget
+
 		setState({
 			...state,
 			[target.name]: target.type === 'checkbox'
@@ -23,8 +25,9 @@ function ContactForm() {
 				: target.value
 		})
 	}
+
 	// Валидация инпутов
-	var validationRules = {
+	const validationRules = {
 		name: !!state.name && state.name.match(/^ *$/) === null,
 		email: isValidEmail(state.email),
 		message: !!state.message
@@ -37,36 +40,37 @@ function ContactForm() {
 	const submit = async (event) => {
 		event.preventDefault();
 
-	// валидация формы по клику "Отправить"
-	const isValidForm = Object
-		.values(validationRules)
-		.every(key => key)
+		// валидация формы по клику "Отправить"
+		const isValidForm = Object
+			.values(validationRules)
+			.every(key => key)
 
-		if (isValidForm) {
-		console.log('✅ Submitting form with state:', state)
-	}
+			if (isValidForm) {
+			console.log('✅ Submitting form with state:', state)
+		}
 	
-	const formData = new FormData(event.target);
+		const formData = new FormData(event.target);
 
-	formData.append("access_key", "e825ad6e-1037-4df3-a00d-3373884abfc0");
+		formData.append("access_key", "e825ad6e-1037-4df3-a00d-3373884abfc0");
 
-	const object = Object.fromEntries(formData);
-	const json = JSON.stringify(object);
+		const object = Object.fromEntries(formData);
+		const json = JSON.stringify(object);
 
-	const res = await fetch("https://api.web3forms.com/submit", {
-		method: "POST",
-		headers: {
-		"Content-Type": "application/json",
-		Accept: "application/json"
-		},
-		body: json
-	}).then((res) => res.json());
-		Swal.fire({
-			text: "Ваше сообщение отправлено",
-			icon: "success",
-			confirmButtonColor: "#008000"
-		});
-	
+		// fetch запрос
+		const res = await fetch("https://api.web3forms.com/submit", {
+			method: "POST",
+			headers: {
+			"Content-Type": "application/json",
+			Accept: "application/json"
+			},
+			body: json
+		}).then((res) => res.json());
+			Swal.fire({
+				text: "Ваше сообщение отправлено",
+				icon: "success",
+				confirmButtonColor: "#008000"
+			});
+			event.target.reset();
 	// .catch((error) => {
 	// 	Swal.fire({
 	// 		text: "Что-то пошло не так. Попробовать еще раз?",
@@ -83,7 +87,7 @@ function ContactForm() {
 		<form onSubmit={submit}>
 			<h4>Напишите нам</h4>
 			<div className="input-box">
-				<label htmlFor="name">Ваше имя</label>
+				<label>Ваше имя</label>
 				<input 
 					type="text" 
 					className="field" 
@@ -94,23 +98,22 @@ function ContactForm() {
 			</div>
 
 			<div className="input-box">
-				<label htmlFor="email">Электронная почта</label>
+				<label>Электронная почта</label>
 				<input 
 					type="email" 
 					className="field" 
-					placeholder="Ваш email" 
+					placeholder="example@email.ru" 
 					name="email" 
 					onChange={update}
 					required/>
 			</div>
 
 			<div className="input-box">
-				<label htmlFor="message">Ваше сообщение</label>
+				<label>Ваше сообщение</label>
 				<textarea 
 					name="message" 
 					className="field mess" 
 					placeholder="Ваше сообщение (до 250 знаков)" 
-					maxLength="250" 
 					onChange={update}
 					required>
 				</textarea>
@@ -124,6 +127,7 @@ function ContactForm() {
                     required/>
                 Согласен с <a href="#">Политикой конфиденциальности</a>
             </label>
+			<input type="hidden" name="subject" value="Форма с сайта Green Pato/index page"/>
 
 			<Button 
 					className="btns"
