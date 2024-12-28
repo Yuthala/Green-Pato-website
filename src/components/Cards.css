@@ -68,13 +68,15 @@
     position: absolute;
     bottom: 0;
     margin-left: 10px;
-    padding: 6px 8px;
+    padding: 4px 8px;
     max-width: calc((100%) - 60px);
     font-size: 14px;
     font-weight: 700;
     color: var(--tint);
     background-color: var(--background);
-    box-sizing: border-box;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid var(--tint);
+    border-bottom: none;
 }
 
 .cards__item__img {

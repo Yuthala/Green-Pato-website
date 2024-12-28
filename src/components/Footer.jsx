@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+//import AnchorLink from "react-anchor-link-smooth-scroll";
 import Mailto from 'react-mailto.js';
 import QRcode from '../images/qrcode.png';
 import tg from '../images/icons/tg.svg';
@@ -20,10 +21,10 @@ function Footer() {
             <div className="footer-link-wrapper">
                 <div className="footer-link-items">
                         <h4>Контакты</h4>
-                        <Link to='https://t.me/LukiChesnoki_bot' target="_blank">
+                        <Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener">
                             Telegram
                         </Link>
-                        <Link to='https://vk.com/fermatikh' target="_blank">
+                        <Link to='https://vk.com/fermatikh' target="_blank" rel="noopener">
 				            ВКонтакте
 			            </Link>
                         <Mailto to='sales@greenpato.ru'>
@@ -40,10 +41,10 @@ function Footer() {
 
                 <div className="footer-link-items">
                     <h4>Заказ</h4>
-                    <Link to='https://t.me/LukiChesnoki_bot' target="_blank">
+                    <Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener">
 						<img src={tg} alt='TG-bot' className="tg-bot__img"/>
 					</Link>
-                    <Link to='https://vk.com/fermatikh' target="_blank">
+                    <Link to='https://vk.com/fermatikh' target="_blank" rel="noopener">
 				        <img src={QRcode} alt='VK_community' className="social__img"/>
 			        </Link>
                 </div>
@@ -55,10 +56,10 @@ function Footer() {
 
             <div className="footer-link-order">
                 <h4>Заказ</h4>
-                <Link to='https://t.me/LukiChesnoki_bot' target="_blank">
+                <Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener">
                     <img src={tg} alt='TG-bot' className="tg-bot__img"/>
                 </Link>
-                <Link to='https://vk.com/fermatikh' target="_blank">
+                <Link to='https://vk.com/fermatikh' target="_blank" rel="noopener">
                     <img src={QRcode} alt='VK_community' className="social__img"/>
                 </Link>
             </div>
@@ -72,9 +73,8 @@ function Footer() {
             {/* <Link to="/" className="social-logo">
                 <img src={logo} width={90} alt="logo"/> 
             </Link> */}
-            <Link to="/" className="social-logo">
-                green pato
-            </Link>
+            <Link to='https://greenpato.ru' className="social-logo">green pato</Link>
+            {/* <AnchorLink href='#navbar' className="social-logo">green pato</AnchorLink > */}
             <div className="react">
                 <p>Powered by</p>
                 <i className="fa-brands fa-react"></i>

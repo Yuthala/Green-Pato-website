@@ -24,7 +24,7 @@ const delivery = [
 		id: 4,
         src: dellin,
 		alt: 'delovye-linii', 
-		label: '*только для грузов свыше 20 кг'
+		label: '*только для грузов свыше 20 кг' 
 	},
 	{
 		id: 5,
