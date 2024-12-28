@@ -28,7 +28,7 @@ function ContactForm() {
 
 	// Валидация инпутов
 	const validationRules = {
-		name: !!state.name && state.name.match(/^ *$/) === null,
+		name: !!state.name && state.name.match(/^ *$/) === null && state.message.length < 20,
 		email: isValidEmail(state.email),
 		message: !!state.message
 			&& state.message.length < 250
@@ -119,14 +119,16 @@ function ContactForm() {
 				</textarea>
 			</div>
 
-			<label>
-                <input
-                    type="checkbox"
-                    name="termsAndConditions"
-                    onChange={update}
-                    required/>
-                Согласен с <a href="#">Политикой конфиденциальности</a>
-            </label>
+            <div className="checkbox">
+				<input
+					type="checkbox"
+					name="termsAndConditions"
+					className="input-check"
+					onChange={update}
+					required/>
+				Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" className="input-p">Политикой конфиденциальности.</a>
+			</div>
+
 			<input type="hidden" name="subject" value="Форма с сайта Green Pato/index page"/>
 
 			<Button 

@@ -9,11 +9,11 @@ form {
 	width: 100%;
 	padding: 3vh 4vw;
 	border-radius: 8px;
-	box-shadow: 0 0 10px rgba(0, 0 , 0, .1)
+	box-shadow: 0 0 10px rgba(0, 0 , 0, .1);
 }
 
 .input-box {
-	margin-top: 3vh;
+	margin-top: 2vh;
 }
 .input-box .field {
 	width: 100%;
@@ -24,12 +24,23 @@ form {
 	border-radius: 6px;
 	padding: 2vh 1vw;
 	font-size: 1em;
-	margin-top: 2vh;
+	margin-top: 0;
 }
 
 .input-box .field.mess {
-	height: 25vh;
+	height: 16vh;
 	resize: none;
+}
+
+input.input-check {
+	margin: 3vh 15px 0 0;
+}
+a.input-p {
+	color: var(--background);
+}
+
+.checkbox {
+	font-size: 12px;
 }
 
 form button {
