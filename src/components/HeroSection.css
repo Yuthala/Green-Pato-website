@@ -26,9 +26,41 @@
     margin: 6px;
 }
 
-.fa-play-circle {
-    margin-left: 4px;
+.hero-banner-wrapper .hero-banner{
+    width: 160px; 
+    height: 160px;
+    background: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    right: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dotted var(--tint);
+    box-shadow: 5px 5px 5px 5px rgba(79, 76, 76, 0.6); 
 }
+
+.hero-banner-wrapper .hero-banner h4{
+    color: var(--green-accent);
+    font-family: 'PT Sans';
+    letter-spacing: 2px;
+    font-weight: 700;
+    transform: rotateZ(-40deg);
+    font-size: 1.1em;
+}
+
+.hero-banner-wrapper .hero-banner h4 >span {
+    color: var(--tint);
+    font-family: 'PT Sans';
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+/* .fa-play-circle {
+    margin-left: 4px;
+} */
+
 
 @media screen and (max-width: 960px) {
     .hero-container > h1 {
@@ -42,6 +74,10 @@
     }
     .hero-container {
         height: 70vh;
+    }
+    .hero-banner-wrapper .hero-banner {
+        width: 130px; 
+        height: 130px;
     }
 }
 
@@ -59,6 +95,12 @@
     .btn {
         width: 100%;
     }
+    .hero-banner-wrapper .hero-banner {
+        right: 12%;
+    }
+    .hero-banner-wrapper .hero-banner {
+        top: 70%;
+    }
 }
 
 @media screen and (max-width: 630px) {
@@ -70,5 +112,23 @@
     .hero-container  h4 {
         font-size: 18px;
         text-align: center;
+    }
+    .hero-banner-wrapper .hero-banner {
+        width: 110px; 
+        height: 110px;
+        top: 13%;
+    }
+    .hero-banner-wrapper .hero-banner h4 {
+        letter-spacing: 1px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .hero-banner-wrapper .hero-banner {
+        width: 90px; 
+        height: 90px;
+        top: 10%;
+    }
+    .hero-banner-wrapper .hero-banner h4 {
+        font-size: 0.9em;
     }
 }

@@ -26,7 +26,6 @@ function HeroSection() {
             </Button>
           </Link>
 
-
             {/* <Button 
                 className="btns"   
                 buttonStyle="btn--primary"
@@ -34,6 +33,12 @@ function HeroSection() {
             >
             ВИДЕО О ПИТОМНИКЕ <i className="fa fa-play-circle" />
             </Button> */}
+        </div>
+
+        <div className="hero-banner-wrapper">
+          <div className="hero-banner">
+            <h4>увеличь <br/> урожайность <br/> на <span>36%</span></h4>
+          </div>
         </div>
     </section>
   )
