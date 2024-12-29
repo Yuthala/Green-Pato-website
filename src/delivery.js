@@ -8,29 +8,24 @@ const delivery = [
 	{
 		id: 1,
         src: post,
-		alt: 'russian-post', 
-		label: ''
+		alt: 'russian-post'
 	}, {
 		id: 2,
         src: cdek,
-		alt: 'cdek',
-		label: ''
+		alt: 'cdek'
 	}, {
 		id: 3,
         src: boxberry,
-		alt: 'boxberry',
-		label: ''
+		alt: 'boxberry'
 	}, {
 		id: 4,
         src: dellin,
-		alt: 'delovye-linii', 
-		label: '*только для грузов свыше 20 кг' 
+		alt: 'delovye-linii'
 	},
 	{
 		id: 5,
         src: tkkit,
-		alt: 'kit', 
-		label: '*только для грузов свыше 20 кг'
+		alt: 'kit'
 	}
 ]
 
