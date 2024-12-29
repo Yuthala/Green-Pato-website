@@ -7,6 +7,7 @@ import Home from './components/pages/Home';
 import Garlic from './components/pages/Garlic';
 import Onion from './components/pages/Onion';
 import Order from './components/pages/Order';
+import Policy from './components/pages/Policy';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/garlic' element={<Garlic />}/>
             <Route path='/onion' element={<Onion />}/>
             <Route path='/order' element={<Order />}/>
+            <Route path='/policy' element={<Policy />}/>
           </Routes>
         <Footer />
       </Router>

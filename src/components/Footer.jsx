@@ -34,9 +34,9 @@ function Footer() {
 
                 <div className="footer-link-items">
                     <h4>Культуры</h4>
-                    <HashLink to='/garlic#garlic'>Озимый чеснок</HashLink>
-                    <HashLink to='/onion#onion'>Шалот</HashLink>
-                    <HashLink to='/onion#onion'>Лук</HashLink>
+                    <HashLink to='/garlic#garlic' rel="noopener">Озимый чеснок</HashLink>
+                    <HashLink to='/onion#onion' rel="noopener">Шалот</HashLink>
+                    <HashLink to='/onion#onion' rel="noopener">Лук</HashLink>
                 </div>
 
                 <div className="footer-link-items">
@@ -66,6 +66,11 @@ function Footer() {
 
             <p>Данный сайт носит информационный характер.<br/> Материалы и цены,
 				размещенные на сайте, не являются публичной офертой.</p>
+
+            <HashLink to='/policy' rel="noopener" className="policy-link">Политика конфиденциальности</HashLink>
+
+            <div className="divider-hor"></div>
+            <p>Юридическая информация: ИП Полоусов И. В. ОГРНИП 323710000050917</p>
         </section>
 
 

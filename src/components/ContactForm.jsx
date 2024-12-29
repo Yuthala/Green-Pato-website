@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+//import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './ContactForm.css'
 import {Button} from './Button'
 import { isValidEmail } from './../isValidEmail'
@@ -126,7 +128,7 @@ function ContactForm() {
 					className="input-check"
 					onChange={update}
 					required/>
-				Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" className="input-p">Политикой конфиденциальности.</a>
+				Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <HashLink to="policy" rel="noopener" className="input-p">Политикой конфиденциальности.</HashLink>
 			</div>
 
 			<input type="hidden" name="subject" value="Форма с сайта Green Pato/index page"/>
