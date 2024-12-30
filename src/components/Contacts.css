@@ -5,7 +5,6 @@
 }
 .contacts-container >h2 {
 	color: var(--tint);
-	margin: 3vh 0;
 }
 
 .contacts__wrapper {
@@ -52,5 +51,4 @@
 
 .contacts-link h4, .contacts-mailto h4, .contact h4 {
 	color: var(--tint);
-	margin-top: 2vh;
 }
