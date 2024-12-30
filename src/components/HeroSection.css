@@ -29,7 +29,7 @@
 .hero-banner-wrapper .hero-banner{
     width: 160px; 
     height: 160px;
-    background: var(--primary);
+    background: #f1eee1;
     border-radius: 50%;
     position: absolute;
     top: 60%;

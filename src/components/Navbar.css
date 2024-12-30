@@ -188,7 +188,7 @@
     }
 
     .fas, .fa-times, .fa-bars, .fa-bars:before, .fa-navicon:before {
-        color: var(--tint);
+        color: var(--primary);
         font-size: 2rem;
     }
 

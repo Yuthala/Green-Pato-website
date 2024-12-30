@@ -65,7 +65,7 @@ function Navbar() {
 
                     <li className="nav-item">
                         <HashLink to="/onion#onion" className="nav-links" onClick={closeMobileMenu}>
-                            Лук
+                            Лук и Шалот
                         </HashLink>
                     </li>
 
