@@ -1,20 +1,11 @@
 /* TODO */
-/* 1. растягивается контейнер на странице Лук
-2. сделать скругление всем бейджам
-3. не помещается морозостойкий на моб версии
+/*3. не помещается морозостойкий на моб версии
 4. https??
 5. скорость загрузки
 7. Cсылка в футере green pato никуда не ведет - проверить
 11. Добавить форму на страницу Заказа
 12. На странице Оформления заказа сделать все пункты кликабельными (ссылки ведут на телеграм)
-13. На странице Лук убрать вертикальный разделитель на мобильной версии
-14. На страницах Лук и чеснок сделать перестроение карточек раньше - в 1 колонку
-15. На страницах Лук и чеснок картинки наползают друг на друга в разделе Ассортимент
 17. Перевести все картинки в webp
-18. чеснок раздел Ассортимент Цены не везде помещаются в строку
-24. Увеличить отступы между разделами (добавить воздуха)
-25. Заголовки разделов на одинаковом расстоянии от контента и начала раздела
-26. Добавить место между подзагловком и текстом на страницах чеснок и Лук
 29. Добавить теги OpenGraph
 30. Добавить страницу 404
 31. Добавить site map
@@ -71,7 +62,7 @@ h2 {
 	font-weight: 600;
 	text-transform: uppercase;
   font-size: 2.4em;
-  margin: 8vh 0 8vh 0;
+  margin: 8vh 0;
 }
 
 h4 {
@@ -79,7 +70,16 @@ h4 {
 	font-weight: 500;
   font-size: 24px;
 	text-transform: uppercase;
-  margin: 4vh 0 4vh 0;
+  margin: 4vh 0;
+} 
+
+h6 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--tint);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2vh 0;
 }
 
 ol, ul {
@@ -99,7 +99,6 @@ ol, ul {
 
 .content >h2 {
   font-size: 2.4em;
-  margin: 12vh 0 5vh;
 }
 
 .content h3{
@@ -162,6 +161,10 @@ ol, ul {
   margin: 5vh 0;
 }
 
+.garlic-assort {
+  justify-content: space-between;
+}
+
 .garlic__type-item, .onion__type-item{
   display: flex;
   flex-direction: column;
@@ -175,7 +178,7 @@ ol, ul {
   height: 20vh;
   object-fit: contain;
   margin-bottom: 4vh;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .garlic__type-item h5, .onion__type-item h5 {
@@ -188,8 +191,9 @@ ol, ul {
 .garlic__type-img {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  height: 100%;
 }
 
 .garlic-price {
@@ -226,7 +230,12 @@ ol, ul {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row;
   gap: 2vh 3vw;
+}
+
+.onion-sorts {
+  margin-bottom: 10vh;
 }
 
 .coming {
@@ -275,6 +284,7 @@ ol, ul {
   background-color: var(--tint);
   box-sizing: border-box;
   z-index: 3;
+  border-radius: 8px;
 }
 
 .garlic__sort-info >h5, .onion__sort-info >h5{
@@ -444,6 +454,9 @@ ol, ul {
     justify-content: center;
     align-items: center;
   }
+  .onion-assort .divider {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 620px) {
@@ -469,6 +482,61 @@ ol, ul {
     width: 80%;
     justify-content: space-between;
   }
+  .garlic-sorts, .onion-sorts {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4vh 3vw;
+  }
+  .garlic__sort-wrap::after  {
+    top: 12px;
+  }
+  .onion-assort-shalot, .onion-assort-rep {
+    display: flex;
+    justify-content: space-around;
+  }
 }
+
+@media screen and (max-width: 500px) {
+  .garlic-assort {
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+  }
+  .garlic__type-item {
+    width: 80%;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0 , 0, .1);
+  }
+  .garlic__type-item img {
+    height: 20vh;
+    margin-bottom: 2vh;
+  }
+  .garlic-cat-size {
+    display: flex;
+    gap: 5vw;
+  }
+  .garlic-cat {
+    margin: 0;
+  }
+  .garlic-size {
+    font-size: .8em;
+    line-height: 2em;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .garlic-cat-size {
+    gap: 2vw;
+  }
+  .garlic__type-item {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+
+
 
 

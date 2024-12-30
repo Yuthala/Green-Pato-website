@@ -10,11 +10,15 @@ export function GarlicType ({id, src, alt, label, priceA, priceB, sizeA, sizeB, 
 			</div>
 
 			<div className="garlic-price">
-				<h4>Цена за {measurement}</h4>
-				<p className="garlic-cat">Категория А:  {priceA}</p>
-				<p className="garlic-size">{sizeA}</p>
-				<p className="garlic-cat">Категория Б:  {priceB}</p>
-				<p  className="garlic-size">{sizeB}</p>
+				<h6>Цена за {measurement}</h6>
+				<div className="garlic-cat-size">
+					<p className="garlic-cat">Категория А: &nbsp;&nbsp;{priceA}</p>
+					<p className="garlic-size">{sizeA}</p>
+				</div>
+				<div className="garlic-cat-size">
+					<p className="garlic-cat">Категория Б: &nbsp;&nbsp;{priceB}</p>
+					<p  className="garlic-size">{sizeB}</p>
+				</div>
 			</div>
 		  </div>
 		</>

@@ -20,8 +20,8 @@ export const assort = [
 		src: zubok,
 		alt: 'zubok',
 		label: 'зубок первой репродукции',
-		priceA: '600-800 р.',
-		priceB: '450-500 р.',
+		priceA: '700 р.',
+		priceB: '500 р.',
 		sizeA: '(калибр 6+)',
 		sizeB: '(калибр 5-6 см)',
 		measurement: '1 кг'
