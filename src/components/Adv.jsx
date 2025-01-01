@@ -3,6 +3,7 @@ import '../App.css';
 import { Button } from './Button';
 import './Adv.css';
 import { Link } from 'react-router-dom';
+import advImg from '../images/adv-img.jpg'
 
 
 function Adv() {
@@ -24,6 +25,11 @@ function Adv() {
 				ЗАКАЗАТЬ
 				</Button>
 			</Link>
+
+
+			<div className="adv-image" itemscope itemtype="http://schema.org/ImageObject">
+          		<img src={advImg} alt="main image" itemprop="contentUrl"/>
+        	</div>
 		</section>
 	)
 }
