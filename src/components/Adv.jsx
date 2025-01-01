@@ -7,9 +7,9 @@ import advImg from '../images/adv-img.jpg'
 
 
 function Adv() {
-
 	//событие клик по кнопке "Заказать" ym
-	// const counterClick = () => {window.ym(97604546,'reachGoal','OrderClick')};
+	const ym = () => {window.ym(97604546,'reachGoal','OrderClick')};
+
 
 	return (
 		<section className="adv-wrapper">
@@ -20,7 +20,7 @@ function Adv() {
 					className="btns"   
 					buttonStyle="btn--outline"
 					buttonSize="btn--large"
-					onClick={window.ym(97604546,'reachGoal','OrderClick')}
+					onClick={ym}
 				>
 				ЗАКАЗАТЬ
 				</Button>
@@ -33,5 +33,7 @@ function Adv() {
 		</section>
 	)
 }
+
+
 
 export default Adv

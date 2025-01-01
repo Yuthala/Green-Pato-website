@@ -28,14 +28,14 @@ export default function Order() {
                     <div className="order__wrapper">
                         <div className="order__item">
                             <label>через Telegram bot</label>
-                            <Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener">
+                            <Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener noreferrer">
                                 <img src={tg} alt='TG-bot' className="tg-bot__img"/>
                             </Link>
                         </div>
 
                         <div className="order__item">
                             <label>в нашем сообществе VK</label>
-                            <Link to='https://vk.com/fermatikh' target="_blank" rel="noopener">
+                            <Link to='https://vk.com/fermatikh' target="_blank" rel="noopener noreferrer">
                                 <img src={QRcode} alt='VK_community' className="social__img"/>
                             </Link>
                         </div>

@@ -17,7 +17,7 @@ function Social() {
 					<li>любимые рецепты</li>
 				</ul>
 				
-				<Link to='https://vk.com/fermatikh' target="_blank" rel="noopener">
+				<Link to='https://vk.com/fermatikh' target="_blank" rel="noopener noreferrer">
 					<img src={QRcode} alt='VK_community' className="social__img"/>
 				</Link>
 

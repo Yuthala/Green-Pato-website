@@ -19,7 +19,7 @@ function Contacts() {
 						<p> узнать актуальные цены | оформить заказ</p>
 						<p>получить счет на оплату | задать вопрос</p>
 
-						<Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener">
+						<Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener noreferrer">
 							<img src={tg} alt='TG-bot' className="tg-bot__img"/>
 						</Link>
 					</div>

@@ -128,7 +128,7 @@ function ContactForm() {
 					className="input-check"
 					onChange={update}
 					required/>
-				Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <HashLink to="policy" rel="noopener" className="input-p">Политикой конфиденциальности.</HashLink>
+				Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <HashLink to="policy" rel="noopener noreferrer" className="input-p">Политикой конфиденциальности.</HashLink>
 			</div>
 
 			<input type="hidden" name="subject" value="Форма с сайта Green Pato/index page"/>
