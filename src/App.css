@@ -4,7 +4,6 @@
 5. скорость загрузки
 7. Cсылка в футере green pato никуда не ведет - проверить
 11. Добавить форму на страницу Заказа
-12. На странице Оформления заказа сделать все пункты кликабельными (ссылки ведут на телеграм)
 17. Перевести все картинки в webp
 29. Добавить разметку Schema.org
 29. Добавить теги OpenGraph
@@ -254,6 +253,12 @@ ol, ul {
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+
+.onion__sort-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .garlic__sort-wrap, .onion__sort-wrap {

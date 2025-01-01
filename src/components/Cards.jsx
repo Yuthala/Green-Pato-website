@@ -34,11 +34,11 @@ function Cards() {
         <h2 className="cards__header">Культуры</h2>
         <div className="cards__container">
             <div className="cards__wrapper">
-                <ul className="cards__items">
+                <ul className="cards__items" itemscope itemtype="http://schema.org/ItemList">
                     {CardSectionOne}
                 </ul>
 
-                <ul className="cards__items">
+                <ul className="cards__items" itemscope itemtype="http://schema.org/ItemList">
                     {CardSectionTwo}
                 </ul>
             </div>

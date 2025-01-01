@@ -24,10 +24,10 @@ function Contacts() {
 						</Link>
 					</div>
 
-					<div className="contacts-mailto">
+					<div className="contacts-mailto" itemscope itemtype="https://schema.org/Organization">
 						<h4>Электронная почта</h4>
 							<Mailto to='sales@greenpato.ru' className="mailto__wrapper">
-									<label>sales@greenpato.ru</label>
+									<label itemprop="email">sales@greenpato.ru</label>
 									<img className="contacts__img" src={email} alt='email'/>
 							</Mailto>
 					</div>

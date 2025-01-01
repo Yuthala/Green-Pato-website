@@ -38,12 +38,12 @@ function Navbar() {
 
   return (
     <section className="wrapper-nav">
-        <nav className="navbar">
-            <div className="navbar-container" id="navbar">
+        <nav className="navbar" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div className="navbar-container" id="navbar" itemscope itemtype="http://schema.org/Organization">
                 {/* при клике по логотипу mobile Menu также закрывается */}
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                <Link to="/" className="navbar-logo" onClick={closeMobileMenu} itemprop="url">
                     <div className="navbar-wrapper">
-                        <img src={logo} width={90} alt="logo"/>
+                        <img src={logo} width={90} alt="logo" itemprop="logo"/>
                         <h2>green&nbsp;pato</h2>
                     </div>
                 </Link>
@@ -52,26 +52,26 @@ function Navbar() {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
-                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu} itemprop="url">
                             Главная
                         </Link>
                     </li>
 
                     <li className="nav-item">
-                        <HashLink to="/garlic#garlic" className="nav-links" onClick={closeMobileMenu}>
+                        <HashLink to="/garlic#garlic" className="nav-links" onClick={closeMobileMenu} itemprop="url">
                         Чеснок
                         </HashLink>
                     </li>
 
                     <li className="nav-item">
-                        <HashLink to="/onion#onion" className="nav-links" onClick={closeMobileMenu}>
+                        <HashLink to="/onion#onion" className="nav-links" onClick={closeMobileMenu} itemprop="url">
                             Лук и Шалот
                         </HashLink>
                     </li>
 
                     <li className="nav-item">
                         <Link 
-                            to="/order/#order" className="nav-links-mobile" onClick={closeMobileMenu}>
+                            to="/order/#order" className="nav-links-mobile" onClick={closeMobileMenu} itemprop="url">
                             ЗАКАЗАТЬ
                         </Link>
                     </li>
