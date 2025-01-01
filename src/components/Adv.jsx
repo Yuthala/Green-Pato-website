@@ -7,10 +7,11 @@ import advImg from '../images/adv-img.jpg'
 
 
 function Adv() {
-	//событие клик по кнопке "Заказать" ym
+
 	const useLayoutEffect = () => {
-		//const ym = () => {window.ym(97604546,'reachGoal','OrderClick')};
+		//событие клик по кнопке "Заказать" ym
 		window.ym(97604546,'reachGoal','OrderClick');
+		// scroll to top
 		window.scrollTo(0, 0)
 	};
 

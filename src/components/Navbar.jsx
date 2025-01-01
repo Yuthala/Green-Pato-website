@@ -16,8 +16,13 @@ function Navbar() {
     const handleClick = () => {
         setClick(!click);
     }
-    //функция клика по крестику (закрыть меню гамбургер)
-    const closeMobileMenu = () => setClick(false);
+
+    const useLayoutEffect = () => {
+        //функция клика по крестику (закрыть меню гамбургер)
+		setClick(false);
+		// scroll to top
+		window.scrollTo(0, 0)
+	};
 
     //функция, показывающая кнопку Sign Up при ширине экрана 960px и выше, скрывает при ширине <960px
     const showButton = () => {
@@ -41,7 +46,7 @@ function Navbar() {
         <nav className="navbar" itemScope itemType="http://schema.org/SiteNavigationElement">
             <div className="navbar-container" id="navbar" itemScope itemType="http://schema.org/Organization">
                 {/* при клике по логотипу mobile Menu также закрывается */}
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu} itemProp="url">
+                <Link to="/" className="navbar-logo" onClick={useLayoutEffect} itemProp="url">
                     <div className="navbar-wrapper">
                         <img src={logo} width={90} alt="logo" itemProp="logo"/>
                         <h2>green&nbsp;pato</h2>
@@ -52,27 +57,27 @@ function Navbar() {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
-                        <Link to="/" className="nav-links" onClick={closeMobileMenu} itemProp="url">
+                        <Link to="/" className="nav-links" onClick={useLayoutEffect} itemProp="url">
                             Главная
                         </Link>
                     </li>
 
                     <li className="nav-item">
-                        <HashLink to="/garlic#garlic" className="nav-links" onClick={closeMobileMenu} itemProp="url">
+                        <HashLink to="/garlic#garlic" className="nav-links" onClick={useLayoutEffect} itemProp="url">
                         Чеснок
                         </HashLink>
                     </li>
 
                     <li className="nav-item">
-                        <HashLink to="/onion#onion" className="nav-links" onClick={closeMobileMenu} itemProp="url">
+                        <HashLink to="/onion#onion" className="nav-links" onClick={useLayoutEffect} itemProp="url">
                             Лук и Шалот
                         </HashLink>
                     </li>
 
                     <li className="nav-item">
                         <Link 
-                            to="/order/#order" className="nav-links-mobile" onClick={closeMobileMenu} itemProp="url">
-                            ЗАКАЗАТЬ
+                            to="/order/#order" className="nav-links-mobile" onClick={useLayoutEffect} itemProp="url">
+                            заказать
                         </Link>
                     </li>
                 </ul>
