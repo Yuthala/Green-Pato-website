@@ -8,7 +8,12 @@ import advImg from '../images/adv-img.jpg'
 
 function Adv() {
 	//событие клик по кнопке "Заказать" ym
-	const ym = () => {window.ym(97604546,'reachGoal','OrderClick')};
+	const useLayoutEffect = () => {
+		//const ym = () => {window.ym(97604546,'reachGoal','OrderClick')};
+		window.ym(97604546,'reachGoal','OrderClick');
+		window.scrollTo(0, 0)
+	};
+
 
 
 	return (
@@ -20,7 +25,7 @@ function Adv() {
 					className="btns"   
 					buttonStyle="btn--outline"
 					buttonSize="btn--large"
-					onClick={ym}
+					onClick={useLayoutEffect}
 				>
 				ЗАКАЗАТЬ
 				</Button>
