@@ -11,7 +11,7 @@ import tg from '../images/icons/tg.svg';
 
 function Footer() {
   return (
-    <section className="footer-container" itemscope itemtype="http://schema.org/WPFooter">
+    <section className="footer-container" itemScope itemType="http://schema.org/WPFooter">
 
         <Link to="/" className="social-logo-up">
             green pato
@@ -86,7 +86,7 @@ function Footer() {
             </div>
             
             <div className="copyright">
-                <small className="website-rights" itemprop="copyrightHolder">Green Pato © 2023-2025</small>
+                <small className="website-rights" itemProp="copyrightHolder">Green Pato © 2023-2025</small>
                 <small className="website-rights">Webmaster: Yuthala@GitHub</small>
             </div>
         </section>

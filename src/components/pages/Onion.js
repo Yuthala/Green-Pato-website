@@ -101,12 +101,12 @@ export default function Onion() {
                    
 
                     <h2>лук-шалот сорта</h2>
-                    <div className="onion-sorts" itemscope itemtype="http://schema.org/Product">
+                    <div className="onion-sorts" itemScope itemType="http://schema.org/Product">
                         {SortShalot}
                     </div>
 
                     <h2>лук репчатый сорта</h2>
-                    <div className="onion-sorts" itemscope itemtype="http://schema.org/Product">
+                    <div className="onion-sorts" itemScope itemType="http://schema.org/Product">
                         {SortRep}
                     </div>
                 </section>

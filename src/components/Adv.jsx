@@ -27,8 +27,8 @@ function Adv() {
 			</Link>
 
 
-			<div className="adv-image" itemscope itemtype="http://schema.org/ImageObject">
-          		<img src={advImg} alt="main image" itemprop="contentUrl"/>
+			<div className="adv-image" itemScope itemType="http://schema.org/ImageObject">
+          		<img src={advImg} alt="main image" itemProp="contentUrl"/>
         	</div>
 		</section>
 	)
