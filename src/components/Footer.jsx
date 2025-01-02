@@ -10,10 +10,15 @@ import tg from '../images/icons/tg.svg';
 
 
 function Footer() {
+
+    const useLayoutEffect = () => {
+		// scroll to top
+		window.scrollTo(0, 0)
+	};
   return (
     <section className="footer-container" itemScope itemType="http://schema.org/WPFooter">
 
-        <Link to="/" className="social-logo-up">
+        <Link to="/#navbar" className="social-logo-up" onClick={useLayoutEffect}>
             green pato
         </Link>
 
@@ -67,7 +72,7 @@ function Footer() {
             <p>Данный сайт носит информационный характер.<br/> Материалы и цены,
 				размещенные на сайте, не являются публичной офертой.</p>
 
-            <HashLink to='/policy' rel="noopener noreferrer" className="policy-link">Политика конфиденциальности</HashLink>
+            <HashLink to='/policy' rel="noopener noreferrer" className="policy-link" onClick={useLayoutEffect}>Политика конфиденциальности</HashLink>
 
             <div className="divider-hor"></div>
             <p>Юридическая информация: ИП Полоусов И. В. ОГРНИП 323710000050917</p>
@@ -78,7 +83,7 @@ function Footer() {
             {/* <Link to="/" className="social-logo">
                 <img src={logo} width={90} alt="logo"/> 
             </Link> */}
-            <Link to='https://greenpato.ru' className="social-logo">green pato</Link>
+            <Link to='/#navbar' className="social-logo" onClick={useLayoutEffect}>green pato</Link>
             {/* <AnchorLink href='#navbar' className="social-logo">green pato</AnchorLink > */}
             <div className="react">
                 <p>Powered by</p>

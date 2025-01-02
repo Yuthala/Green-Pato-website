@@ -8,6 +8,11 @@ import { isValidEmail } from './../isValidEmail'
 import Swal from 'sweetalert2'
 
 function ContactForm() {
+
+	const useLayoutEffect = () => {
+		// scroll to top
+		window.scrollTo(0, 0)
+	};
 	// Задаем state для инпутов
 	const [state, setState] = useState({
         name: '',
@@ -128,7 +133,7 @@ function ContactForm() {
 					className="input-check"
 					onChange={update}
 					required/>
-				Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <HashLink to="policy" rel="noopener noreferrer" className="input-p">Политикой конфиденциальности.</HashLink>
+				Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <HashLink to="policy" rel="noopener noreferrer" className="input-p" onClick={useLayoutEffect }>Политикой конфиденциальности.</HashLink>
 			</div>
 
 			<input type="hidden" name="subject" value="Форма с сайта Green Pato/index page"/>
