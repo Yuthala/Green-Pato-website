@@ -17,7 +17,12 @@
     align-items: center;
     justify-content: center;
 }
-
+.hero-container h1 {
+    color: black;
+}
+.hero-container h4 {
+    color: black;
+}
 .hero-btns {
     margin-top: 32px;
 }

@@ -7,6 +7,9 @@ import logo from './../images/logo.webp';
 
 function Navbar() {
 
+    //состояние нажата ли кнопка Заказать
+    const[isClicked, setIsClicked] = useState(false)
+
     //состояние клик по гамбургеру
     const [click, setClick] = useState(false);
     //состояние отображения кнопки Заказать в зависимости от размера экрана
@@ -28,7 +31,8 @@ function Navbar() {
 		// scroll to top
 		window.scrollTo(0, 0)
         //return btn-primary
-        setClick(true);
+        setIsClicked(current => !current);
+        setIsClicked(false);
 	};
 
     //функция, показывающая кнопку Заказать при ширине экрана 960px и выше, скрывает при ширине <960px
@@ -91,7 +95,7 @@ function Navbar() {
                 {/* if button is true, return Button component */}
                 {button && 
                 <Link to="/order#order">
-                    <Button buttonStyle="btn--outline" onClick={removeHover}>ЗАКАЗАТЬ</Button>
+                    <Button className="btn" buttonStyle={isClicked ? "btn--primary" : "btn--outline"}  onClick={removeHover}>ЗАКАЗАТЬ</Button>
                 </Link>
 }
             </div>
