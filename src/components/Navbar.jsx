@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { Button } from './Button';
 import './Navbar.css';
-import logo from './../images/logo.png'; 
+import logo from './../images/logo.webp'; 
 
 function Navbar() {
 
     //состояние клик по гамбургеру
     const [click, setClick] = useState(false);
-    //состояние отображения кнопки Sign Up в зависимости от размера экрана
+    //состояние отображения кнопки Заказать в зависимости от размера экрана
     const [button, setButton] = useState(true);
 
     //функция клика по гамбургеру
@@ -24,7 +24,14 @@ function Navbar() {
 		window.scrollTo(0, 0)
 	};
 
-    //функция, показывающая кнопку Sign Up при ширине экрана 960px и выше, скрывает при ширине <960px
+    const removeHover = () => {
+		// scroll to top
+		window.scrollTo(0, 0)
+        //return btn-primary
+        setClick(true);
+	};
+
+    //функция, показывающая кнопку Заказать при ширине экрана 960px и выше, скрывает при ширине <960px
     const showButton = () => {
         if(window.innerWidth <= 960) {
             setButton(false)
@@ -33,7 +40,7 @@ function Navbar() {
         }
     };
 
-    //чтобы кнопка Sign Up не появлялась при ширине экрана < 960px при обновлении страницы (отрисовывается 1 раз, т.к. передан пустой массив зависимостей)
+    //чтобы кнопка Заказать не появлялась при ширине экрана < 960px при обновлении страницы (отрисовывается 1 раз, т.к. передан пустой массив зависимостей)
     useEffect(() => {
         showButton();
     }, [])
@@ -84,7 +91,7 @@ function Navbar() {
                 {/* if button is true, return Button component */}
                 {button && 
                 <Link to="/order#order">
-                    <Button buttonStyle="btn--outline">ЗАКАЗАТЬ</Button>
+                    <Button buttonStyle="btn--outline" onClick={removeHover}>ЗАКАЗАТЬ</Button>
                 </Link>
 }
             </div>

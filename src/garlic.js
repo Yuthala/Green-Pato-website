@@ -1,17 +1,17 @@
 //for assort
-import zubok from './images/garlic/garlic-zubok.jpg';
-import odn from './images/garlic/garlic-odn.jpg';
-import bulb from './images/garlic/garlic-bulb.jpg';
+import zubok from './images/garlic/garlic-zubok.webp';
+import odn from './images/garlic/garlic-odn.webp';
+import bulb from './images/garlic/garlic-bulb.webp';
 
 //for sorts
-import lyubasha from './images/garlic/lyubasha.jpg';
-import bogatyr from './images/garlic/bogatyr.jpg';
-import dobrynya from './images/garlic/dobrynya.jpg';
-import shadejka from './images/garlic/shadejka.jpg';
-import komsomolets from './images/garlic/komsomolets.jpg';
-import otradn from './images/garlic/otradn.jpg';
-import bashkir from './images/garlic/bashkirsky.jpg';
-import osenny from './images/garlic/osenny.jpg';
+import lyubasha from './images/garlic/lyubasha.webp';
+import bogatyr from './images/garlic/bogatyr.webp';
+import dobrynya from './images/garlic/dobrynya.webp';
+import shadejka from './images/garlic/shadejka.webp';
+import komsomolets from './images/garlic/komsomolets.webp';
+import otradn from './images/garlic/otradn.webp';
+import bashkir from './images/garlic/bashkirsky.webp';
+import osenny from './images/garlic/osenny.webp';
 
 
 export const assort = [

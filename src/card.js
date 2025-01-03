@@ -1,8 +1,8 @@
-import odn from './images/odn.jpg';
-import zubok from './images/garlic1.jpg';
-import shalot from './images/shalot.jpg';
-import redbaron from './images/redbaron.jpg';
-import bulb from './images/bulb.jpg';
+import odn from './images/odn.webp';
+import zubok from './images/garlic1.webp';
+import shalot from './images/shalot.webp';
+import redbaron from './images/redbaron.webp';
+import bulb from './images/bulb.webp';
 
 const cards = [
     {

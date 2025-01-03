@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 //import AnchorLink from "react-anchor-link-smooth-scroll";
 import Mailto from 'react-mailto.js';
-import QRcode from '../images/qrcode.png';
+import QRcode from '../images/qrcode.webp';
 import tg from '../images/icons/tg.svg';
 // import logo from './../images/logo.png';
 

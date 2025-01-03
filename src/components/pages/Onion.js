@@ -2,9 +2,9 @@ import React from 'react';
 import '../../App.css';
 import {assort, sorts} from '../../onion';
 import {OnionType, OnionSort} from '../OnionItem';
-import scheme3 from '../../images/onion/scheme3.jpeg';
-import scheme4 from '../../images/onion/scheme4.jpeg';
-import scheme5 from '../../images/onion/scheme5.jpeg';
+import scheme3 from '../../images/onion/scheme3.webp';
+import scheme4 from '../../images/onion/scheme4.webp';
+import scheme5 from '../../images/onion/scheme5.webp';
 
 
 export default function Onion() {

@@ -142,7 +142,7 @@ ol, ul {
 }
 
 .garlic-header {
-  background-image: url('./images/garlic/garlic-bckg.jpg');
+  background-image: url('./images/garlic/garlic-bckg.webp');
 }
 
 .garlic-header>h1, .onion-header >h1, .order-header>h1 {
@@ -309,7 +309,7 @@ ol, ul {
 /* некоторые css свойства в разделе Garlic*/
 
 .onion-header {
-  background-image: url('./images/onion/onion-bckg.jpg');
+  background-image: url('./images/onion/onion-bckg.webp');
 }
 .order-header>h1 {
   margin-top: 10vh;
@@ -364,7 +364,7 @@ ol, ul {
 
 /*ORDER PAGE*/
 .order-header {
-  background-image: url('./images/order-bckg.jpg');
+  background-image: url('./images/order-bckg.webp');
   position: relative;
 }
 

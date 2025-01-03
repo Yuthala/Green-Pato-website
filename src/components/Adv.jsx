@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import { Button } from './Button';
 import './Adv.css';
-import { Link } from 'react-router-dom';
-import advImg from '../images/adv-img.jpg'
+import advImg from '../images/adv-img.webp'
 
 
 function Adv() {
@@ -14,8 +14,6 @@ function Adv() {
 		// scroll to top
 		window.scrollTo(0, 0)
 	};
-
-
 
 	return (
 		<section className="adv-wrapper">
@@ -34,7 +32,7 @@ function Adv() {
 
 
 			<div className="adv-image" itemScope itemType="http://schema.org/ImageObject">
-          		<img src={advImg} alt="main image" itemProp="contentUrl"/>
+          		<img src={advImg} alt="main-schema" itemProp="contentUrl"/>
         	</div>
 		</section>
 	)

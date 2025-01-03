@@ -2,12 +2,10 @@ import React from 'react';
 
 export function OnionType({id, src, alt, label}) {
 	return (
-		<>
-			<div className="onion__type-item">
-				<img src={src} alt={alt} id={id} itemProp="image"/>
-				<h5 itemProp="name">{label}</h5>
-			</div>
-		</>
+		<div className="onion__type-item">
+			<img src={src} alt={alt} id={id} itemProp="image"/>
+			<h5 itemProp="name">{label}</h5>
+		</div>
 	)
 }
 

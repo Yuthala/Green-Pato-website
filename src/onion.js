@@ -1,18 +1,18 @@
 //for assort
-import sevokShalot from './images/onion/onion-sevok.jpeg';
-import onionSeeds from './images/onion/onion-seeds.jpg';
-import onionSeeds2 from './images/onion/onion-seeds2.jpg';
-import onionRedBaron from './images/onion/onion-redbaron.jpg';
+import sevokShalot from './images/onion/onion-sevok.webp';
+import onionSeeds from './images/onion/onion-seeds.webp';
+import onionSeeds2 from './images/onion/onion-seeds2.webp';
+import onionRedBaron from './images/onion/onion-redbaron.webp';
 
 //сорта лук-шалот
-import zolotinka from './images/onion/zolotinka.jpg';
-import kwochka from './images/onion/kwochka.jpg';
-import rose from './images/onion/izumrud.jpg';
-import banan from './images/onion/banan.png';
-import karmen from './images/onion/karmen.jpeg';
-import redbaron from './images/onion/redbaron.jpg';
-import stardust from './images/onion/stardust.jpg';
-import shtut from './images/onion/shtut-risen.jpg';
+import zolotinka from './images/onion/zolotinka.webp';
+import kwochka from './images/onion/kwochka.webp';
+import rose from './images/onion/izumrud.webp';
+import banan from './images/onion/banan.webp';
+import karmen from './images/onion/karmen.webp';
+import redbaron from './images/onion/redbaron.webp';
+import stardust from './images/onion/stardust.webp';
+import shtut from './images/onion/shtut-risen.webp';
 
 //сорта лук репчатый
 

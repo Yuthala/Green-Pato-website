@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Mailto from 'react-mailto.js';
 import email from '../../images/icons/email.svg';
 import tg from '../../images/icons/tg.svg';
-import QRcode from '../../images/qrcode.png';
+import QRcode from '../../images/qrcode.webp';
 
 
 export default function Order() {

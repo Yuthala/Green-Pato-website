@@ -1,8 +1,8 @@
-import post from './images/icons/post.jpg';
-import cdek from './images/icons/cdek.jpg';
-import boxberry from './images/icons/boxberry.jpg';
-import dellin from './images/icons/dellin.jpg';
-import tkkit from './images/icons/kit.jpg';
+import post from './images/icons/post.webp';
+import cdek from './images/icons/cdek.webp';
+import boxberry from './images/icons/boxberry.webp';
+import dellin from './images/icons/dellin.webp';
+import tkkit from './images/icons/kit.webp';
 
 const delivery = [
 	{
