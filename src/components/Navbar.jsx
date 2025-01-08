@@ -53,7 +53,7 @@ function Navbar() {
     window.addEventListener('resize', showButton);
 
   return (
-    <section className="wrapper-nav">
+    <header className="wrapper-nav">
         <nav className="navbar" itemScope itemType="http://schema.org/SiteNavigationElement">
             <div className="navbar-container" id="navbar" itemScope itemType="http://schema.org/Organization">
                 {/* при клике по логотипу mobile Menu также закрывается */}
@@ -100,7 +100,7 @@ function Navbar() {
 }
             </div>
         </nav>
-    </section>
+    </header>
   )
 }
 

@@ -37,13 +37,13 @@
 }
 
 /*hover effects*/
-.btn--medium:hover {
+.btn--medium:focus:hover {
     background-color: var(--primary);
     color: var(--tint);
     transition: all 0.3s ease-out;
 }
 
-.btn--large:hover {
+.btn--large:focus:hover {
     background-color: var(--primary);
     border-color: var(--tint);
     color: var(--tint);

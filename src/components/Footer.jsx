@@ -16,7 +16,7 @@ function Footer() {
 		window.scrollTo(0, 0)
 	};
   return (
-    <section className="footer-container" itemScope itemType="http://schema.org/WPFooter">
+    <footer className="footer-container" itemScope itemType="http://schema.org/WPFooter">
 
         <Link to="/#navbar" className="social-logo-up" onClick={useLayoutEffect}>
             green pato
@@ -72,7 +72,7 @@ function Footer() {
             <p>Данный сайт носит информационный характер.<br/> Материалы и цены,
 				размещенные на сайте, не являются публичной офертой.</p>
 
-            <HashLink to='/policy' rel="noopener noreferrer" className="policy-link" onClick={useLayoutEffect}>Политика конфиденциальности</HashLink>
+            <HashLink to='/policy' rel="noopener noreferrer license" className="policy-link" onClick={useLayoutEffect}>Политика конфиденциальности</HashLink>
 
             <div className="divider-hor"></div>
             <p>Юридическая информация: ИП Полоусов И. В. ОГРНИП 323710000050917</p>
@@ -95,7 +95,7 @@ function Footer() {
                 <small className="website-rights">Webmaster: Yuthala@GitHub</small>
             </div>
         </section>
-    </section>
+    </footer>
   )
 }
 

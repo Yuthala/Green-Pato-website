@@ -13,6 +13,7 @@ function ContactForm() {
 		// scroll to top
 		window.scrollTo(0, 0)
 	};
+
 	// Задаем state для инпутов
 	const [state, setState] = useState({
         name: '',
@@ -133,13 +134,12 @@ function ContactForm() {
 					className="input-check"
 					onChange={update}
 					required/>
-				Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <HashLink to="policy" rel="noopener noreferrer" className="input-p" onClick={useLayoutEffect }>Политикой конфиденциальности.</HashLink>
+				Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <HashLink to="policy" rel="noopener noreferrer license" className="input-p" onClick={useLayoutEffect }>Политикой конфиденциальности.</HashLink>
 			</div>
 
 			<input type="hidden" name="subject" value="Форма с сайта Green Pato/index page"/>
 
 			<Button 
-					className="btns"
 					buttonStyle="btn--outline"
 					buttonSize="btn--medium"
 				>
