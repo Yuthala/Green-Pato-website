@@ -9,14 +9,15 @@ import QRcode from '../../images/qrcode.webp';
 
 export default function Order() {
     return (
-        <div className="order" id="order">
+        <main>
+            <section className="order" id="order">
                 <div className="order-header">
                     <h1>оформление заказа</h1>
                     <p className="license">*Image by freepik</p>
                 </div>
 
 
-                <section className="content">
+                <div className="content">
                     <ul className="order-list">
                         <li>Узнать актуальные цены</li>
                         <li>Узнать о товарах в наличии</li>
@@ -47,8 +48,10 @@ export default function Order() {
                             </Mailto>
                         </div>
                     </div>
-                </section>
-        </div>
+                </div>
+            </section>
+        </main>
+
 
     );
 }

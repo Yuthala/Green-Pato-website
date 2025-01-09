@@ -3,7 +3,7 @@ import '../../App.css';
 
 export default function Policy() {
 	return (
-		<div className="policy">
+		<section className="policy">
 			<h1 className="policy-header">Политика в отношении обработки персональных данных</h1>
 			<ol>
 				<li className="policy-subheader">Общие положения</li>
@@ -134,7 +134,7 @@ export default function Policy() {
 						<li>12.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу https://greenpato.ru/policy.</li>
 					</ul>
 			</ol>
-		</div>
+		</section>
 		
 	)
 }

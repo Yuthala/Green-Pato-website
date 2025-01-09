@@ -18,10 +18,10 @@
     justify-content: center;
 }
 .hero-container h1 {
-    color: black;
+    color: var(--black);
 }
 .hero-container h4 {
-    color: black;
+    color: var(--black);
 }
 .hero-btns {
     margin-top: 32px;

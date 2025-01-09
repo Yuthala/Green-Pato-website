@@ -2,16 +2,12 @@
 /*
 5. скорость загрузки
 11. Добавить форму на страницу Заказа
-12. Не работает hover на кнопках. Проверить hover, active, focus 
 14. проверить иерархию заголовков и соответствие  code style
-15. Вместо resize:none поставить min/max width/height
 16. Прогнать все компоненты через валидатор
-17. Проверить наличие тегов header/footer
 18. Добавить tab-index и чтобы можно было пользоваться сайтом без мышки
 19. aria-label
 20. lazy-load для больших изображений
 21. Проверить размеры картинок
-22. проверить почему yandex metrics не работает
 23. сделать шрифты локально (ttf, woff2)
 24. Переделать кнопки Каталог и Заказать на ссылки
 
@@ -32,6 +28,7 @@
 */
 
 :root {
+  --base-bg-color: #F1E9DA;
   --primary: #fff;
   --accent: #504842;
   --tint: #AB3541;
@@ -39,12 +36,13 @@
   --text-background: #F9FBE9;
   --green-accent: #008000;
   --light-brown: #AD8945; 
+  --black: black;
 }
 
 body {
   margin: 0 auto;
   max-width: 1200px;
-  border: 1px solid lightgray
+  background-color: var(--base-bg-color);
 }
 
 * {
@@ -149,24 +147,24 @@ ol, ul {
 
 
 /* GARLIC */
+.garlic {
+  background-color: var(--primary);
+}
 .garlic-header, .onion-header, .order-header{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--accent);
 }
-
 .garlic-header {
   background-image: url('./images/garlic/garlic-bckg.webp');
 }
-
 .garlic-header>h1, .onion-header >h1, .order-header>h1 {
   font-size: 5em;
   text-transform: uppercase;
   color: var(--primary);
   margin-top: 30vh;
 }
-
 .garlic-assort, .onion-assort {
   display: flex;
   align-items: stretch;
@@ -174,11 +172,9 @@ ol, ul {
   gap: 2vw;
   margin: 5vh 0;
 }
-
 .garlic-assort {
   justify-content: space-between;
 }
-
 .garlic__type-item, .onion__type-item{
   display: flex;
   flex-direction: column;
@@ -187,21 +183,18 @@ ol, ul {
   width: 30%;
   margin: 2vh 2vw;
 }
-
 .garlic__type-item img, .onion__type-item img {
   height: 20vh;
   object-fit: contain;
   margin-bottom: 4vh;
   border-radius: 8px;
 }
-
 .garlic__type-item h5, .onion__type-item h5 {
   color: var(--accent);
   font-size: 1em;
   font-weight: 700;
   text-align: center;
 }
-
 .garlic__type-img {
   display: flex;
   flex-direction: column;
@@ -209,37 +202,23 @@ ol, ul {
   align-items: center;
   height: 100%;
 }
-
 .garlic-price {
   margin-top: 1vh;
 }
-
 .garlic-price >h4 {
   color: var(--tint);
   font-size: 1.1em;
 }
-
 .garlic-price >p {
   line-height: 1.2em;
   font-size: 1em;
 }
-
-
 .garlic-price >p.garlic-size {
   font-size: .8em;
 }
-
 .garlic-cat {
   margin-top: 12px;
 }
-
-.onion-bold {
-  font-size: 1.2em;
-  color: var(--accent);
-  line-height: 2em;
-  font-weight: bold;
-}
-
 .garlic-sorts, .onion-sorts {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -247,16 +226,6 @@ ol, ul {
   grid-auto-flow: row;
   gap: 2vh 3vw;
 }
-
-.onion-sorts {
-  margin-bottom: 10vh;
-}
-
-.coming {
-  opacity: .6;
-  margin-bottom: 10vh;
-}
-
 .garlic__sort-item, .onion__sort-item{
   list-style-type: none;
   background-color: var(--background);
@@ -268,28 +237,18 @@ ol, ul {
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
 }
-
-.onion__sort-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .garlic__sort-wrap, .onion__sort-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .garlic__sort-wrap img, .onion__sort-wrap img {
   height: 20vh;
   border-radius: 50%;
 }
-
 .garlic__sort-wrap {
   position: relative;
 }
-
 .garlic__sort-wrap::after {
   content: attr(data-category);
   position: absolute;
@@ -306,7 +265,6 @@ ol, ul {
   z-index: 3;
   border-radius: 8px;
 }
-
 .garlic__sort-info >h5, .onion__sort-info >h5{
   color: var(--tint);
   font-weight: 700;
@@ -314,7 +272,6 @@ ol, ul {
   text-transform: uppercase;
   margin: 2vh 0;
 }
-
 .garlic__sort-info >p {
   line-height: 1.6em;
   font-size: 1.1em;
@@ -322,71 +279,83 @@ ol, ul {
 
 /*ONION*/
 /* некоторые css свойства в разделе Garlic*/
-
+.onion {
+  background-color: var(--primary);
+}
 .onion-header {
   background-image: url('./images/onion/onion-bckg.webp');
 }
 .order-header>h1 {
   margin-top: 10vh;
 }
-
 .onion-assort h3 {
   font-size: 2em;
   text-transform: uppercase;
   color: var(--tint);
   text-align: center;
 }
-
 .onion-assort .divider {
   height: 35vh;
 }
-
 .onion-assort-shalot, .onion-assort-rep {
   display: flex;
   align-items: stretch;
   justify-content: center;
 }
-
 .onion__sort-info >ul {
   list-style-type: none;
   margin-top: 3vh;
   display: flex;
   flex-direction: column;
 }
-
+.onion-sorts {
+  margin-bottom: 10vh;
+}
+.onion__sort-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .onion-li {
   height: 20px;
   border-bottom: 1px dotted var(--accent);
   background-color: var(--background);
   margin-top: 10px;
 }
-
 .onion-price-line {
   float: left;
   background-color: var(--background);
   font-weight: bold;
 }
-
 .onion-price {
   float: right;
   background-color: var(--background);
 }
-
 .onion-comment {
   display: flex;
   justify-content: start;
 }
-
+.onion-bold {
+  font-size: 1.2em;
+  color: var(--accent);
+  line-height: 2em;
+  font-weight: bold;
+}
+.coming {
+  opacity: .6;
+  margin-bottom: 10vh;
+}
 /*ORDER PAGE*/
+.order {
+  background-color: var(--primary);
+}
 .order-header {
   background-image: url('./images/order-bckg.webp');
   position: relative;
 }
-
 .order-header>h1 {
   font-size: 4em;
 }
-
 .order-list {
   width: fit-content;
   margin: 0 auto;
@@ -395,11 +364,9 @@ ol, ul {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .order-list >li {
   line-height: 2em;
 }
-
 .order__wrapper {
   display: flex;
   flex-direction: column;
@@ -407,7 +374,6 @@ ol, ul {
   margin-top: 6vh;
   max-width: 100%;
 }
-
 .order__item {
   display: flex;
   align-items: center;
@@ -415,11 +381,9 @@ ol, ul {
   width: 60vw;
   margin-top: 5vh;
 }
-
 .order__item img {
   margin: 0;
 }
-
 .order__item label {
   font-size: 1.4em;
 }
@@ -427,13 +391,13 @@ ol, ul {
 /* POLICY */
 .policy {
   padding: 5vh 3vw;
+  background-color: var(--primary);
 }
 .policy-header {
   color: var(--tint);
   font-size: 2em;
   margin-bottom: 5vh;
 }
-
 .policy-subheader {
   font-weight: 700;
   margin-bottom: 2vh;
