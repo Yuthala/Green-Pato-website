@@ -95,43 +95,46 @@ function ContactForm() {
 		<form onSubmit={submit}>
 			<h4>Напишите нам</h4>
 			<div className="input-box">
-				<label>Ваше имя</label>
-				<input 
-					type="text" 
-					className="field" 
-					placeholder="Ваше имя" 
-					name="name" 
-					onChange={update}
-					required/>
+				<label>Ваше имя
+					<input 
+						type="text" 
+						className="field" 
+						placeholder="Ваше имя" 
+						name="name" 
+						onChange={update}
+						required/>
+				</label>
 			</div>
 
 			<div className="input-box">
-				<label>Электронная почта</label>
-				<input 
-					type="email" 
-					className="field" 
-					placeholder="example@email.ru" 
-					name="email" 
-					onChange={update}
-					required/>
+					<label>Электронная почта
+					<input 
+						className="field"
+						type="email"  
+						placeholder="example@email.ru" 
+						name="email" 
+						onChange={update}
+						required/>
+				</label>
 			</div>
 
 			<div className="input-box">
-				<label>Ваше сообщение</label>
-				<textarea 
-					name="message" 
-					className="field mess" 
-					placeholder="Ваше сообщение (до 250 знаков)" 
-					onChange={update}
-					required>
-				</textarea>
+				<label>Ваше сообщение
+					<textarea 
+						className="field mess" 
+						name="message" 
+						placeholder="Ваше сообщение (до 250 знаков)" 
+						onChange={update}
+						required>
+					</textarea>
+				</label>
 			</div>
 
             <div className="checkbox">
 				<input
+					className="input-check"
 					type="checkbox"
 					name="termsAndConditions"
-					className="input-check"
 					onChange={update}
 					required/>
 				Нажимая на кнопку "Отправить", вы даете согласие на обработку персональных данных и соглашаетесь с <HashLink to="policy" rel="noopener noreferrer license" className="input-p" onClick={useLayoutEffect }>Политикой конфиденциальности.</HashLink>

@@ -20,13 +20,13 @@ function Contacts() {
 						<p>получить счет на оплату | задать вопрос</p>
 
 						<Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener noreferrer">
-							<img src={tg} alt='TG-bot' className="tg-bot__img"/>
+							<img className="tg-bot__img" src={tg} alt='TG-bot'/>
 						</Link>
 					</div>
 
 					<div className="contacts-mailto" itemScope itemType="https://schema.org/Organization">
 						<h4>Электронная почта</h4>
-							<Mailto to='sales@greenpato.ru' className="mailto__wrapper">
+							<Mailto className="mailto__wrapper" to='sales@greenpato.ru'>
 									<label itemProp="email">sales@greenpato.ru</label>
 									<img className="contacts__img" src={email} alt='email'/>
 							</Mailto>

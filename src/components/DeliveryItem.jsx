@@ -4,7 +4,7 @@ function DeliveryItem({src, alt}) {
 	return (
 		<>
 			<figure className="delivery__item">
-				<img src={src} alt={alt} className="delivery__item__img" />
+				<img className="delivery__item__img" src={src} alt={alt} />
 			</figure>
 		</>
 	)

@@ -21,7 +21,6 @@ function Adv() {
 			<p className="banner"><span className="bigger-text">Открыт предзаказ на 2025 год</span></p>
 			<Link to="/order">
 				<Button 
-					className="btns"   
 					buttonStyle="btn--outline"
 					buttonSize="btn--large"
 					onClick={useLayoutEffect}

@@ -57,7 +57,7 @@ function Navbar() {
         <nav className="navbar" itemScope itemType="http://schema.org/SiteNavigationElement">
             <div className="navbar-container" id="navbar" itemScope itemType="http://schema.org/Organization">
                 {/* при клике по логотипу mobile Menu также закрывается */}
-                <Link to="/" className="navbar-logo" onClick={useLayoutEffect} itemProp="url">
+                <Link className="navbar-logo" to="/"  onClick={useLayoutEffect} itemProp="url">
                     <div className="navbar-wrapper">
                         <img src={logo} width={90} alt="logo" itemProp="logo"/>
                         <h2>green&nbsp;pato</h2>
@@ -68,26 +68,26 @@ function Navbar() {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
-                        <Link to="/" className="nav-links" onClick={useLayoutEffect} itemProp="url">
+                        <Link className="nav-links" to="/" onClick={useLayoutEffect} itemProp="url">
                             Главная
                         </Link>
                     </li>
 
                     <li className="nav-item">
-                        <HashLink to="/garlic#garlic" className="nav-links" onClick={useLayoutEffect} itemProp="url">
+                        <HashLink className="nav-links" to="/garlic#garlic" onClick={useLayoutEffect} itemProp="url">
                         Чеснок
                         </HashLink>
                     </li>
 
                     <li className="nav-item">
-                        <HashLink to="/onion#onion" className="nav-links" onClick={useLayoutEffect} itemProp="url">
+                        <HashLink className="nav-links" to="/onion#onion"  onClick={useLayoutEffect} itemProp="url">
                             Лук и Шалот
                         </HashLink>
                     </li>
 
                     <li className="nav-item">
                         <Link 
-                            to="/order/#order" className="nav-links-mobile" onClick={useLayoutEffect} itemProp="url">
+                            className="nav-links-mobile" to="/order/#order" onClick={useLayoutEffect} itemProp="url">
                             заказать
                         </Link>
                     </li>

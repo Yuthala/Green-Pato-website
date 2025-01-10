@@ -18,7 +18,7 @@ function Footer() {
   return (
     <footer className="footer-container" itemScope itemType="http://schema.org/WPFooter">
 
-        <Link to="/#navbar" className="social-logo-up" onClick={useLayoutEffect}>
+        <Link className="social-logo-up" to="/#navbar" onClick={useLayoutEffect}>
             green pato
         </Link>
 
@@ -46,11 +46,11 @@ function Footer() {
 
                 <div className="footer-link-items">
                     <h4>Заказ</h4>
-                    <Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener noreferrer">
-						<img src={tg} alt='TG-bot' className="tg-bot__img"/>
+                    <Link to="https://t.me/LukiChesnoki_bot" target="_blank" rel="noopener noreferrer">
+						<img className="tg-bot__img" src={tg} alt='TG-bot'/>
 					</Link>
-                    <Link to='https://vk.com/fermatikh' target="_blank" rel="noopener noreferrer">
-				        <img src={QRcode} alt='VK_community' className="social__img"/>
+                    <Link to="https://vk.com/fermatikh" target="_blank" rel="noopener noreferrer">
+				        <img className="social__img" src={QRcode} alt="VK_community" />
 			        </Link>
                 </div>
             </div>
@@ -61,18 +61,18 @@ function Footer() {
 
             <div className="footer-link-order">
                 <h4>Заказ</h4>
-                <Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener noreferrer">
-                    <img src={tg} alt='TG-bot' className="tg-bot__img"/>
+                <Link className="tg-bot__img" to="https://t.me/LukiChesnoki_bot" target="_blank" rel="noopener noreferrer">
+                    <img src={tg} alt="TG-bot" />
                 </Link>
-                <Link to='https://vk.com/fermatikh' target="_blank" rel="noopener noreferrer">
-                    <img src={QRcode} alt='VK_community' className="social__img"/>
+                <Link to="https://vk.com/fermatikh" target="_blank" rel="noopener noreferrer">
+                    <img className="social__img" src={QRcode} alt="VK_community" />
                 </Link>
             </div>
 
             <p>Данный сайт носит информационный характер.<br/> Материалы и цены,
 				размещенные на сайте, не являются публичной офертой.</p>
 
-            <HashLink to='/policy' rel="noopener noreferrer license" className="policy-link" onClick={useLayoutEffect}>Политика конфиденциальности</HashLink>
+            <HashLink className="policy-link" to="/policy" rel="noopener noreferrer license" onClick={useLayoutEffect}>Политика конфиденциальности</HashLink>
 
             <div className="divider-hor"></div>
             <p>Юридическая информация: ИП Полоусов И. В. ОГРНИП 323710000050917</p>
@@ -83,7 +83,7 @@ function Footer() {
             {/* <Link to="/" className="social-logo">
                 <img src={logo} width={90} alt="logo"/> 
             </Link> */}
-            <Link to='/#navbar' className="social-logo" onClick={useLayoutEffect}>green pato</Link>
+            <Link className="social-logo" to="/#navbar" onClick={useLayoutEffect}>green pato</Link>
             {/* <AnchorLink href='#navbar' className="social-logo">green pato</AnchorLink > */}
             <div className="react">
                 <p>Powered by</p>

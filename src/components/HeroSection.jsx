@@ -16,7 +16,7 @@ function HeroSection() {
         <h4>Посевной материал собственного производства</h4>
         
         <div className="hero-btns">
-          <Link to="/#cards" className="btn-mobile effect effect-5" title="Каталог">
+          <Link className="btn-mobile effect effect-5" to="/#cards" title="Каталог">
               КАТАЛОГ
           </Link>
 
