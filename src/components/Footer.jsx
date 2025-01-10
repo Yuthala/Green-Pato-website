@@ -60,7 +60,7 @@ function Footer() {
             <div className="divider-hor"></div>
 
             <div className="footer-link-order">
-                <h4>Заказ</h4>
+                <h4>Заказать</h4>
                 <Link className="tg-bot__img" to="https://t.me/LukiChesnoki_bot" target="_blank" rel="noopener noreferrer">
                     <img src={tg} alt="TG-bot" />
                 </Link>

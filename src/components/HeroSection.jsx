@@ -13,7 +13,7 @@ function HeroSection() {
     <section className="hero-container">
         {/* <video src={videoCover} autoPlay loop muted/> */}
         <h1>Питомник луковичных культур</h1>
-        <h4>Посевной материал собственного производства</h4>
+        <h2>Посевной материал собственного производства</h2>
         
         <div className="hero-btns">
           <Link className="btn-mobile effect effect-5" to="/#cards" title="Каталог">
@@ -31,7 +31,7 @@ function HeroSection() {
 
         <div className="hero-banner-wrapper">
           <div className="hero-banner">
-            <h4>увеличь <br/> урожайность <br/> на <span>36%</span></h4>
+            <h3>увеличь <br/> урожайность <br/> на <span>36%</span></h3>
           </div>
         </div>
     </section>

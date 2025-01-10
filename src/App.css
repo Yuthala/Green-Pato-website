@@ -71,16 +71,26 @@ h2 {
   text-align: center;
 	font-weight: 600;
 	text-transform: uppercase;
+  font-size: 1.8em;
+  margin: 4vh 0;
+}
+
+h3 {
+  color: var(--tint);
+  text-align: center;
+	font-weight: 600;
   font-size: 2.4em;
+	text-transform: uppercase;
   margin: 8vh 0;
 }
 
 h4 {
-  text-align: center;
-	font-weight: 500;
+  color: var(--black);
+	font-weight: 700;
   font-size: 24px;
-	text-transform: uppercase;
-  margin: 4vh 0;
+  margin: 4vh 0 0 0;
+  text-transform: uppercase;
+  text-align: center;
 } 
 
 h6 {
@@ -111,7 +121,7 @@ ol, ul {
   font-size: 2.4em;
 }
 
-.content h3{
+.content >h3{
   margin-top: 15px;
   color: var(--tint);
   font-weight: 700;
@@ -163,6 +173,14 @@ ol, ul {
   color: var(--primary);
   margin-top: 30vh;
 }
+.content>h3 {
+  text-align-last: left;
+  text-transform: none;
+  color: var(--tint);
+	font-weight: 700;
+  font-size: 18px;
+  margin: 4vh 0 0 0;
+} 
 .garlic-assort, .onion-assort {
   display: flex;
   align-items: stretch;
@@ -312,7 +330,20 @@ ol, ul {
 .onion__sort-item {
   display: flex;
   flex-direction: column;
+  justify-content: start;
+}
+.onion__sort-info {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+}
+.onion__sort-descr>h5 {
+  color: var(--tint);
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 2vh;
 }
 .onion-li {
   height: 20px;
@@ -398,7 +429,7 @@ ol, ul {
 }
 .policy-subheader {
   font-weight: 700;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   line-height: 1em;
 }
 .policy-link {

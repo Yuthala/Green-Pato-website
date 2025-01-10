@@ -43,6 +43,11 @@
 	padding: 4vh 0 0 0;
 }
 
+.adv-wrapper h3 {
+	color: var(--primary);
+	font-size: 20px;
+}
+
 .adv-wrapper p {
 	color: var(--primary);
 	padding: 2vh 2vw;

@@ -12,23 +12,23 @@ function Contacts() {
 	return (
 		<>
 			<section className="contacts-container" id="contacts">
-				<h2>Контакты</h2>
-				<div className='contacts__wrapper'>
+				<h3>Контакты</h3>
+				<div className="contacts__wrapper">
 					<div className="contacts-link">
 						<h4>Телеграм-бот</h4>
 						<p> узнать актуальные цены | оформить заказ</p>
 						<p>получить счет на оплату | задать вопрос</p>
 
-						<Link to='https://t.me/LukiChesnoki_bot' target="_blank" rel="noopener noreferrer">
-							<img className="tg-bot__img" src={tg} alt='TG-bot'/>
+						<Link to="https://t.me/LukiChesnoki_bot" target="_blank" rel="noopener noreferrer">
+							<img className="tg-bot__img" src={tg} alt="TG-bot"/>
 						</Link>
 					</div>
 
 					<div className="contacts-mailto" itemScope itemType="https://schema.org/Organization">
 						<h4>Электронная почта</h4>
-							<Mailto className="mailto__wrapper" to='sales@greenpato.ru'>
+							<Mailto className="mailto__wrapper" to="sales@greenpato.ru">
 									<label itemProp="email">sales@greenpato.ru</label>
-									<img className="contacts__img" src={email} alt='email'/>
+									<img className="contacts__img" src={email} alt="email"/>
 							</Mailto>
 					</div>
 				</div>

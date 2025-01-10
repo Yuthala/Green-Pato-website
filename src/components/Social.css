@@ -9,6 +9,7 @@
 .social-container h4 {
 	font-size: 1.5em;
 	color: var(--black);
+	margin-bottom: 4vh;
 }
 .social__wrapper {
 	display: flex;

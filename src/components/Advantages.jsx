@@ -19,7 +19,7 @@ function Icons() {
 
   return (
     <section className="icons">
-        <h2>Наши преимущества</h2>
+        <h3>Наши преимущества</h3>
         <div className="icon__container">
             {Icon}
         </div>

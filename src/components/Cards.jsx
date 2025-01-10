@@ -31,7 +31,7 @@ function Cards() {
 
   return (
     <section className="cards" id="cards">
-        <h2 className="cards__header">Культуры</h2>
+        <h3 className="cards__header">Культуры</h3>
         <div className="cards__container">
             <div className="cards__wrapper">
                 <ul className="cards__items" itemScope itemType="http://schema.org/ItemList">

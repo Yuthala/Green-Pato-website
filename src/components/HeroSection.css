@@ -17,18 +17,12 @@
     align-items: center;
     justify-content: center;
 }
-.hero-container h1 {
-    color: var(--accent);
-}
-.hero-container h4 {
-    color: var(--accent);
-}
 .hero-btns {
     margin-top: 32px;
 }
 
 .hero-btns .btn{
-    margin: 6px;
+    margin: 6vh 2vw;
 }
 
 .hero-banner-wrapper .hero-banner{
@@ -46,7 +40,7 @@
     box-shadow: 5px 5px 5px 5px rgba(79, 76, 76, 0.6); 
 }
 
-.hero-banner-wrapper .hero-banner h4{
+.hero-banner-wrapper .hero-banner h3{
     color: var(--green-accent);
     font-family: 'PT Sans';
     letter-spacing: 2px;
@@ -55,7 +49,7 @@
     font-size: 1.1em;
 }
 
-.hero-banner-wrapper .hero-banner h4 >span {
+.hero-banner-wrapper .hero-banner h3 >span {
     color: var(--tint);
     font-family: 'PT Sans';
     letter-spacing: 2px;
@@ -114,27 +108,28 @@
         text-align: center;
         margin-top: 10vh;
     }
-    .hero-container  h4 {
+    .hero-container  h3 {
         font-size: 18px;
         text-align: center;
     }
     .hero-banner-wrapper .hero-banner {
-        width: 90px; 
-        height: 90px;
-        top: 13%;
+        width: 100px; 
+        height: 100px;
+        top: 10%;
     }
-    .hero-banner-wrapper .hero-banner h4 {
+    .hero-banner-wrapper .hero-banner h3 {
         letter-spacing: 1px;
         font-size: 0.9em;
     }
 }
 @media screen and (max-width: 430px) {
     .hero-banner-wrapper .hero-banner {
-        width: 70px; 
-        height: 70px;
         right: 40px;
     }
-    .hero-banner-wrapper .hero-banner h4 {
-        font-size: 0.7em;
+}
+
+@media screen and (max-width: 380px) {
+    .hero-banner-wrapper .hero-banner {
+        top: 7%;
     }
 }

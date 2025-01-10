@@ -17,8 +17,11 @@ export function OnionSort({src, alt, id, label, item, text, priceA, priceB}) {
 			</figure>
 
 			<div className="onion__sort-info">
-				<h5 itemProp="name">{item}</h5>
-				<p><span className="onion-bold" itemProp="description">Описание: </span> {text}</p>
+				<div className="onion__sort-descr">
+					<h5 itemProp="name">{item}</h5>
+					<p><span className="onion-bold" itemProp="description">Описание: </span> {text}</p>
+				</div>
+				
 				<ul>
 					<li className="onion-li"><p className="onion-price-line">Цена за 1 кг севка:</p><p className="onion-price" itemProp="price"> {priceA}</p></li>
 					<li className="onion-comment"><p>(диаметр 14-24 мм)</p></li>
