@@ -16,14 +16,8 @@ function HeroSection() {
         <h4>Посевной материал собственного производства</h4>
         
         <div className="hero-btns">
-          <Link to="/#cards" className="btn-mobile">
-            <Button 
-                  className="btns"
-                  buttonStyle="btn--outline"
-                  buttonSize="btn--large"
-              >
+          <Link to="/#cards" className="btn-mobile effect effect-5" title="Каталог">
               КАТАЛОГ
-            </Button>
           </Link>
 
             {/* <Button 

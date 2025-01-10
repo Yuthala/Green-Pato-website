@@ -7,8 +7,8 @@
 } */
 
 .hero-container {
-    background: linear-gradient(rgba(245, 242, 242, .6), rgba(249, 247, 247, 0.2)), url('../images/main-bckg.webp') center center / cover no-repeat;
-    /* background-color: #fff; */
+    /* background: linear-gradient(rgba(245, 242, 242, .6), rgba(249, 247, 247, 0.2)), url('../images/main-bckg.webp') center center / cover no-repeat; */
+    background-color: var(--text-background);
     position: relative;
     min-height: 60vh;
     width: 100%;
@@ -18,10 +18,10 @@
     justify-content: center;
 }
 .hero-container h1 {
-    color: var(--black);
+    color: var(--accent);
 }
 .hero-container h4 {
-    color: var(--black);
+    color: var(--accent);
 }
 .hero-btns {
     margin-top: 32px;
@@ -34,7 +34,7 @@
 .hero-banner-wrapper .hero-banner{
     width: 160px; 
     height: 160px;
-    background: #f1eee1;
+    background-color: var(--primary);
     border-radius: 50%;
     position: absolute;
     top: 60%;
@@ -119,21 +119,22 @@
         text-align: center;
     }
     .hero-banner-wrapper .hero-banner {
-        width: 110px; 
-        height: 110px;
+        width: 90px; 
+        height: 90px;
         top: 13%;
     }
     .hero-banner-wrapper .hero-banner h4 {
         letter-spacing: 1px;
+        font-size: 0.9em;
     }
 }
 @media screen and (max-width: 430px) {
     .hero-banner-wrapper .hero-banner {
-        width: 90px; 
-        height: 90px;
-        top: 10%;
+        width: 70px; 
+        height: 70px;
+        right: 40px;
     }
     .hero-banner-wrapper .hero-banner h4 {
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
 }

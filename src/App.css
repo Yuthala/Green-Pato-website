@@ -411,8 +411,56 @@ ol, ul {
   margin-top: 2vh;
   text-decoration: none;
 }
-/*MEDIA*/
 
+/* Button-like links */
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: var(--primary);
+  text-transform: capitalize;
+  background-color: var(--tint);
+  font-family: 'Gabarito', sans-serif; /* put your font-family */
+  font-size: 24px;
+  font-weight: 600;
+  padding: 14px 34px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.effect.effect-5 {
+  transition: all 0.2s linear 0s;
+  
+  &:before {
+    content: "\f054";
+    font-family: FontAwesome;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 50% 50% 0;
+    transform: scale(0,1);
+    transform-origin: left center;
+    transition: all 0.2s linear 0s;
+  }
+  
+   &:hover {
+    text-indent: 30px;
+    
+    &:before {
+      transform: scale(1,1);
+      text-indent: 0;
+    }
+  }
+}
+
+/*MEDIA*/
 @media screen and (max-width: 960px) {
   body{
     font-size: .8em;
