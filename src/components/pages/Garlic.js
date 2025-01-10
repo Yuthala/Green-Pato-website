@@ -14,10 +14,8 @@ export default function Garlic() {
             key={item.id}
             priceA={item.priceA}
             priceB={item.priceB}
-            priceC={item.priceC}
             sizeA={item.sizeA}
             sizeB={item.sizeB}
-            sizeC={item.sizeC}
             measurement={item.measurement}
         />
     );

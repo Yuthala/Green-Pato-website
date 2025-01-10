@@ -102,6 +102,7 @@ function ContactForm() {
 						placeholder="Ваше имя" 
 						name="name" 
 						onChange={update}
+						tabIndex="0"
 						required/>
 				</label>
 			</div>
