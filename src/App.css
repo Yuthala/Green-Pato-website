@@ -109,17 +109,11 @@ ol, ul {
 .content {
   margin: 0 auto;
   margin-top: 10vh;
-  padding: 3vh 5vw;
+  padding: 0 5vw;
 }
 
 .content >h2 {
   font-size: 2.4em;
-}
-
-.content >h3{
-  margin-top: 15px;
-  color: var(--tint);
-  font-weight: 700;
 }
 
 .scheme {
@@ -161,12 +155,13 @@ ol, ul {
 }
 .garlic-header {
   background-image: url('./images/garlic/garlic-bckg.webp');
+  max-height: 60vh;
 }
 .garlic-header>h1, .onion-header >h1, .order-header>h1 {
   font-size: 5em;
   text-transform: uppercase;
   color: var(--primary);
-  margin-top: 30vh;
+  margin-top: 20vh;
 }
 .content>h3 {
   text-align-last: left;
@@ -174,7 +169,7 @@ ol, ul {
   color: var(--tint);
 	font-weight: 700;
   font-size: 18px;
-  margin: 4vh 0 0 0;
+  margin: 3vh 0 0 0;
 } 
 .garlic-assort, .onion-assort {
   display: flex;
@@ -201,10 +196,11 @@ ol, ul {
   border-radius: 8px;
 }
 .garlic__type-item h5, .onion__type-item h5 {
-  color: var(--accent);
-  font-size: 1em;
-  font-weight: 700;
+  color: var(--tint);
+  font-size: .8em;
+  font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
 }
 .garlic__type-img {
   display: flex;
@@ -295,6 +291,7 @@ ol, ul {
 }
 .onion-header {
   background-image: url('./images/onion/onion-bckg.webp');
+  max-height: 60vh;
 }
 .order-header>h1 {
   margin-top: 10vh;
@@ -375,6 +372,7 @@ ol, ul {
 }
 .order-header {
   background-image: url('./images/order-bckg.webp');
+  max-height: 50vh;
   position: relative;
 }
 .order-header>h1 {
@@ -395,7 +393,8 @@ ol, ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 6vh;
+  padding-top: 6vh;
+  padding-bottom: 6vh;;
   max-width: 100%;
 }
 .order__item {
