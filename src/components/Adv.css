@@ -44,6 +44,7 @@
 }
 
 .adv-wrapper h3 {
+	font-family: 'Ubuntu', sans-serif;
 	color: var(--primary);
 	font-size: 20px;
 	margin: 0;
@@ -76,8 +77,10 @@
   } 
 
 .bigger-text {
+	font-family: 'Oswald', sans-serif;
 	font-size: 1.2em;
 	font-weight: 600;
+	letter-spacing: 1px;
 	color: var(--primary);
 	text-transform: uppercase;
 	/* animation: pulsate 0.8s ease-in-out infinite alternate;  */

@@ -42,16 +42,16 @@
 
 .hero-banner-wrapper .hero-banner h3{
     color: var(--green-accent);
-    font-family: 'PT Sans';
-    letter-spacing: 2px;
-    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
     transform: rotateZ(-40deg);
     font-size: 1.1em;
 }
 
 .hero-banner-wrapper .hero-banner h3 >span {
     color: var(--tint);
-    font-family: 'PT Sans';
+    font-family: 'Oswald';
     letter-spacing: 2px;
     font-size: 2em;
 }
