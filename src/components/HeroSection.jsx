@@ -13,7 +13,14 @@ function HeroSection() {
         {/* <video src={videoCover} autoPlay loop muted/> */}
         <h1>Питомник луковичных культур</h1>
         <h2>Посевной материал собственного производства</h2>
-        
+
+          <div className="hero-banner">
+            <div className="blur rounded-card">
+              <h3>Урожайность до <span>36%</span> выше <br />
+              с премиальными семенами <br/><span className="logo-style">green pato</span></h3>
+            </div>
+          </div>
+
         <div className="hero-btns">
           <Link className="btn-mobile effect effect-5" to="/#cards" title="Каталог">
               КАТАЛОГ
@@ -26,12 +33,6 @@ function HeroSection() {
             >
             ВИДЕО О ПИТОМНИКЕ <i className="fa fa-play-circle" />
             </Button> */}
-        </div>
-
-        <div className="hero-banner-wrapper">
-          <div className="hero-banner">
-            <h3>увеличь <br/> урожайность <br/> на <span>36%</span></h3>
-          </div>
         </div>
     </section>
   )

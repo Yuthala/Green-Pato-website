@@ -49,7 +49,7 @@
 .navbar-wrapper >h2 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.2em;
-    color: var(--primary);
+    color: var(--accent);
     cursor: pointer;
     font-weight: 700;
     letter-spacing: .2em;
@@ -85,7 +85,7 @@
 }
 
 .nav-links {
-    color: var(--primary);
+    color: var(--accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,7 +187,7 @@
     }
 
     .fas, .fa-times, .fa-bars, .fa-bars:before, .fa-navicon:before {
-        color: var(--primary);
+        color: var(--accent);
         font-size: 2rem;
     }
 

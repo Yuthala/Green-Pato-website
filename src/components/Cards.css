@@ -26,7 +26,7 @@
     position: relative;
 }
 
-.cards__items {
+.cards__items:not(:last-child) {
     margin-bottom: 24px;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .cards__item__info {
-    padding: 20px 30px 30px;
+    padding: 20px;
 }
 
 .cards__item__text {
@@ -120,7 +120,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .cards__item {
+    .cards__item:not(:last-child) {
         margin-bottom: 2rem;
     }
 }

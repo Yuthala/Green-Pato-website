@@ -63,17 +63,10 @@
 	padding: 1em;
 	box-shadow: 0 0 .2rem var(--banner),
 				0 0 .2rem var(--banner),
-				0 0 2rem var(--banner),
-				0 0 0.8rem var(--banner),
-				0 0 2.8rem var(--banner),
-				inset 0 0 1.3rem var(--banner);
-	text-align: center;
-	text-shadow: 
-		0 0 7px var(--banner-close),
-		0 0 10px var(--banner-close),
-		0 0 21px var(--banner-close),
-		0 0 42px var(--banner),
-		0 0 82px var(--banner);
+				0 0 1.8rem var(--banner),
+				0 0 0.5rem var(--banner),
+				0 0 1.8rem var(--banner),
+				inset 0 0 .9rem var(--banner);
   } 
 
 .bigger-text {
