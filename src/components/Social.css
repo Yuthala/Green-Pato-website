@@ -1,7 +1,7 @@
 
 .social-container {
 	background-color: var(--green-accent);
-	color: var(--accent);
+	color: var(--black);
 	font-size: 1.2em;
 	padding: 5vh 2vw;
 }
@@ -20,6 +20,9 @@
 .social__list {
 	list-style-type: none;
 	line-height: 1.8em;
+}
+.social__list li {
+	color: var(--black);
 }
 
 .social__img{

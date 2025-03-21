@@ -37,7 +37,7 @@ function Navbar() {
 
     //функция, показывающая кнопку Заказать при ширине экрана 960px и выше, скрывает при ширине <960px
     const showButton = () => {
-        if(window.innerWidth <= 960) {
+        if(window.innerWidth <= 768) {
             setButton(false)
         } else {
             setButton(true)
@@ -63,41 +63,43 @@ function Navbar() {
                         <h2>green&nbsp;pato</h2>
                     </div>
                 </Link>
-                <div className="menu-icon" onClick={handleClick}>
-                    <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                <div className="item-menu-wrapper">
+                    <div className="menu-icon" onClick={handleClick}>
+                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                    </div>
+                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                        <li className="nav-item">
+                            <Link className="nav-links" to="/" onClick={useLayoutEffect} itemProp="url">
+                                Главная
+                            </Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <HashLink className="nav-links" to="/garlic#garlic" onClick={useLayoutEffect} itemProp="url">
+                            Чеснок
+                            </HashLink>
+                        </li>
+
+                        <li className="nav-item">
+                            <HashLink className="nav-links" to="/onion#onion"  onClick={useLayoutEffect} itemProp="url">
+                                Лук и Шалот
+                            </HashLink>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link 
+                                className="nav-links-mobile" to="/order/#order" onClick={useLayoutEffect} itemProp="url">
+                                заказать
+                            </Link>
+                        </li>
+                    </ul>
+                    {/* if button is true, return Button component */}
+                    {button && 
+                    <Link to="/order#order">
+                        <Button className="btn" buttonStyle={isClicked ? "btn--primary" : "btn--outline"}  onClick={removeHover}>ЗАКАЗАТЬ</Button>
+                    </Link>
+    }
                 </div>
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li className="nav-item">
-                        <Link className="nav-links" to="/" onClick={useLayoutEffect} itemProp="url">
-                            Главная
-                        </Link>
-                    </li>
-
-                    <li className="nav-item">
-                        <HashLink className="nav-links" to="/garlic#garlic" onClick={useLayoutEffect} itemProp="url">
-                        Чеснок
-                        </HashLink>
-                    </li>
-
-                    <li className="nav-item">
-                        <HashLink className="nav-links" to="/onion#onion"  onClick={useLayoutEffect} itemProp="url">
-                            Лук и Шалот
-                        </HashLink>
-                    </li>
-
-                    <li className="nav-item">
-                        <Link 
-                            className="nav-links-mobile" to="/order/#order" onClick={useLayoutEffect} itemProp="url">
-                            заказать
-                        </Link>
-                    </li>
-                </ul>
-                {/* if button is true, return Button component */}
-                {button && 
-                <Link to="/order#order">
-                    <Button className="btn" buttonStyle={isClicked ? "btn--primary" : "btn--outline"}  onClick={removeHover}>ЗАКАЗАТЬ</Button>
-                </Link>
-}
             </div>
         </nav>
     </header>

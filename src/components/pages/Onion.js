@@ -90,8 +90,6 @@ export default function Onion() {
                                 </div>
                             </div>
 
-                            <div className="divider"></div>
-
                             <div>
                                 <h3>Лук репчатый</h3>
                                 <div className="onion-assort-rep">

@@ -72,9 +72,8 @@
     font-size: 14px;
     font-weight: 700;
     color: var(--tint);
-    background-color: var(--background);
+    background-color: var(--green-accent);
     border-radius: 8px 8px 0 0;
-    border: 1px solid var(--tint);
     border-bottom: none;
 }
 

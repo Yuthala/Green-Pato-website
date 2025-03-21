@@ -93,6 +93,11 @@ body {
   color: var(--accent);
 }
 
+button {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 button[disabled] {
   opacity: 0.5;
   pointer-events: none;

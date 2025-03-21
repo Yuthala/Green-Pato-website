@@ -50,7 +50,7 @@
     transition: all 0.3s ease-out;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
     .btn--large {
         padding: 10px 22px;
         font-size: 18px;
