@@ -92,7 +92,7 @@ function Footer() {
             
             <div className="copyright">
                 <small className="website-rights" itemProp="copyrightHolder">Green Pato © 2023-2025</small>
-                <small className="website-rights">Webmaster: Yuthala@GitHub</small>
+                <small className="website-rights">Webmaster: rocotbrent</small>
             </div>
         </section>
     </footer>
